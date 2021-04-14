@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include ('partials/head') %>
+    <link rel="stylesheet" href="/css/register.css">
+
+<body>
+    
+    <%- include ('partials/header') %>
+
+    <section class="form">
+        <form method="POST" action="/" class="register">
+            <div class="control-formulario">
+                <input type="text" placeholder="Nombre y Apellido" name="apeynom" class="control" required minlength="3">
+            </div>            
+            <div class="control-formulario">
+                <input type="text" placeholder="Nombre de usuario" name="user" class="control" required minlength="3">
+            </div>            
+            <div class="control-formulario">
+                <input type="email" placeholder="E-mail" name="email" class="control" required>
+            </div>            
+            <div class="control-formulario">
+                <input type="text" placeholder="Teléfono" name="telefono" class="control" required>
+            </div>            
+            <div class="control-formulario">
+                <label class="label">Fecha de nacimiento</label>
+                <input type="date" placeholder="mm/dd/yyyy" name="f_nacimiento" class="control" required>
+            </div>            
+            <div class="perfil_cont">
+                <label class="label">Perfil de usuario</label>
+                <label>
+                <input type="radio" 
+                    name="perfil_usr" class="perfil">Para publicar
+                </label>
+                <label>
+                <input type="radio" 
+                    name="perfil_usr" class="perfil">Para alquilar
+                </label>
+            </div>            
+            <div class="intereses">
+                <label  class="label">Intereses</label>
+                <label class="check"><input type="checkbox"  name="interes" value="electro">Casas</label>
+                <label class="check"><input type="checkbox"  name="interes" value="moda">Departamentos</label>
+                <label class="check"><input type="checkbox"  name="interes" value="hogar">Hoteles</label>
+                <label class="check"><input type="checkbox"  name="interes" value="jugeteria">Hosterías</label>
+                <label class="check"><input type="checkbox"  name="interes" value="vida-sana">Aparts</label>
+            </div>
+            <div class="control-formulario">
+                <input type="password" placeholder="Ingrese la password" name="password" class="control" required minlength="3">
+            </div>            
+            <div class="control-formulario">
+                <input type="password" placeholder="Repita la password" name="password" class="control" required minlength="3">
+            </div>            
+            <div class="buttons">
+                <button type="submit" class="boton-formulario">Enviar</button>
+                <button type="reset" class="boton-formulario">Reset</button>
+            </div>
+        
+        </form>        
+    </section>
+
+    <%- include ('partials/footer') %>
+    
+</body>
+
+</html>
