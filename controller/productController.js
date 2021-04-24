@@ -12,14 +12,11 @@ let productController = {
     },
 
     showEdit: (req, res) => {
-        //console.log('ESTOY ENTRANDO AL METODO EDIT:')
-
-        let product = casas.find(function (value) {
+       let product = casas.find(function (value) {
 
             return value.id === req.params.id
         })
 
-        //console.log(product)
         if (product) {
             res.render('products/editProduct', { product });
         } else {
@@ -29,6 +26,14 @@ let productController = {
 
     showList: (req, res) => {
         res.render ('products/listProducts')
+    },
+
+    showCreate: (req, res) => {
+        res.render('./products/newProduct.ejs');
+    },
+
+    showCreado: (req, res) => {
+        res.send("Recibe datos de formulario");
     }
     
 }
