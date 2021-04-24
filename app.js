@@ -1,5 +1,7 @@
 const express = require('express')
 const app = express()
+const methodOverride = require('method-override');
+
 
 const path = require('path');
 const puerto = process.env.PORT;
@@ -13,6 +15,12 @@ app.use(express.static('public'));
 
 //Configuramos ejs
 app.set('view engine', 'ejs')
+
+//midleware de PUT y DELETE
+app.use(methodOverride('_method'));
+//Uso de formualrios
+app.use(express.urlencoded({ extended: false }));
+
 
 //Damos de alta el puerto
 app.listen(puerto || 3000, function() {

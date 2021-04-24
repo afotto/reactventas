@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<%- include ('../partials/head') %>
+    <link rel="stylesheet" href="/css/editProduct.css">
+
+    <body>
+
+        <%- include ('../partials/header') %>
+
+            <main class="main">
+                <h3>Alta de productos</h3>
+                <form action="/products" method="POST" class="form">
+                    <div class="campo">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" ">
+                    </div>
+                    <div class="campo">
+                        <label for="descrip">Descripción</label>
+                        <input type="text" name="descrip" ">
+                    </div>
+                    <div class="campo">
+                        <label for="imagen">Imagen</label>
+                        <input type="file" name="imagen">
+                    </div>
+                    <div class="campo">
+                        <label for="categ">Categoría</label>
+                        <input type="text" name="categ" >
+                    </div>
+                    <div class="campo">
+                        <label for="habit">Cantidad de Habitaciones</label>
+                        <input type="text" name="habit"  class="habit">
+                    </div>
+                    <div class="campo">
+                        <label for="price">Precio</label>
+                        <input type="number" name="price"  class="precio">
+                    </div>
+
+                    <button type="submit" class="button">Confirmar</button>
+                </form>
+
+
+            </main>
+            <%- include ('../partials/footer') %>
+
+
+    </body>
+
+</html>
