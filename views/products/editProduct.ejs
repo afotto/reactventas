@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<%- include ('../partials/head') %>
+    <link rel="stylesheet" href="/css/editProduct.css">
+
+    <body>
+
+        <%- include ('../partials/header') %>
+
+            <main class="main">
+                <h3>Edición de productos</h3>
+                <form action="/products/listado?_method=PUT" method="POST" class="form">
+                    <div class="campo">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" value="<%= product.nombre %>">
+                    </div>
+                    <div class="campo">
+                        <label for="descrip">Descripción</label>
+                        <input type="text" name="descrip" value="<%= product.descrip %>">
+                    </div>
+                    <div class="campo">
+                        <label for="imagen">Imagen</label>
+                        <input type="file" name="imagen">
+                    </div>
+                    <div class="campo">
+                        <label for="categ">Categoría</label>
+                        <input type="text" name="categ" value="<%= product.categoria %>">
+                    </div>
+                    <div class="campo">
+                        <label for="habit">Cantidad de Habitaciones</label>
+                        <input type="text" name="habit" value="<%= product.cantHabitaciones %>" class="habit">
+                    </div>
+                    <div class="campo">
+                        <label for="price">Precio</label>
+                        <input type="number" name="price" value="<%= product.price %>" class="precio">
+                    </div>
+
+                    <button type="submit" class="button">Actualizar</button>
+                </form>
+
+
+            </main>
+            <%- include ('../partials/footer') %>
+
+
+    </body>
+
+</html>

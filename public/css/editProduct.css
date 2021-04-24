@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    font-family:Roboto;
+}
+
+
+
+.main {
+    padding-top: 20px;
+    background-color: #b0d4e9;
+    
+}
+h3{
+    
+    font-size: 50px;
+    color: #3295ce;
+    font-family: 'Lobster', cursive;
+}
+
+    .form{
+        margin-left: 100px;
+        padding: 20px 15px;
+        text-align: left;
+    }
+
+        .campo{
+            display: block;
+            margin-bottom: 30px;
+        }
+
+            .campo label{
+                font-weight: bold;
+                font-size: 20px;
+                color: #3295ce;
+            }
+
+            .campo input{
+                margin-left: 30px;
+                font-size: 20px;
+            }
+            .habit{
+                width: 50px;
+            }
+
+            .precio{
+                width: 100px;
+            }
+            
+            .button{
+                font-weight: bold;
+                font-size: 20px;
+                background-color:#1259c3;
+                color: #ffffff;
+            }
+
