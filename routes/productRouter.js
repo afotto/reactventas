@@ -8,7 +8,7 @@ router.get('/productCart/', controladorproduct.showCarrito);
 
 router.get('/products/edit:id', controladorproduct.showEdit);
 
-router.get('/products/listado', controladorproduct.showList);
+router.get('/products/listado',controladorproduct.showList);
 router.put('/products/listado',controladorproduct.showList);
 
 router.get('/products/create', controladorproduct.showCreate);

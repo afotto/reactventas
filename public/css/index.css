@@ -108,7 +108,7 @@
 .oferta-destacada-1 {
     background-image: url('/images/img1.jpg');
 }
-.oferta-destacada-1 :hover{
+.oferta-destacada-1 :hover, .oferta-destacada-2 :hover, .oferta-destacada-3 :hover, .oferta-destacada-4 :hover{
     background-color: red;
 }
 .oferta-destacada-2 {

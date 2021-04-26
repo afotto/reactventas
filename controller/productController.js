@@ -25,7 +25,7 @@ let productController = {
     },
 
     showList: (req, res) => {
-        res.render ('products/listProducts')
+        res.render ('products/listProducts', {casas})
     },
 
     showCreate: (req, res) => {

@@ -7,3 +7,21 @@
 main {
     margin-top: 100px;
 }
+
+main img {
+    width: 50%;
+    max-width: 600px;
+}
+
+form {
+    margin-top: 40px;
+}
+
+.listadoDeProductos a, form a {
+    background-color: rgb(11, 130, 204);
+    border: solid 1px rgb(11, 130, 204);
+    border-radius: 3px;
+    padding: 3px 6px;
+    color: white;
+    text-decoration: none;
+}

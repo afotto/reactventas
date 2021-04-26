@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html>
 
-    <%- include ('../partials/head') %>
-    <link rel="stylesheet" href="/css/listProduct.css">
+<%- include ('../partials/head') %>
+    <link rel="stylesheet" href="/css/listProducts.css">
 
     <body>
 
         <%- include ('../partials/header') %>
 
-           <main class="main">
-           <h1>Soy listado de productos</h1>
-            
+            <main class="main">
+
+
+                <h1>Listado de productos</h1>
+                <section class="listadoDeProductos">
+                    <% for (let i=0; i<casas.length; i++) {%>
+
+                        <h3>
+                            <%= casas[i].nombre %>
+                        </h3>
+                        <img src="/images/img<%=i+1%>.jpg" alt="" class="listProductsImage">
+                        <p>
+                            <%= casas[i].descrip %>
+                        </p>
+                        <h5>$ <%= casas[i].price %>
+                        </h5>
+                        <a href="/products/edit<%=i+1%>">Editar</a>
+                        <% } %>
+
+                </section>
+
+
+                <form method="get">
+                    <a href="/products/create">Crear</a>
+                    <a href="/">Borrar</a>
+                </form>
 
             </main>
             <%- include ('../partials/footer') %>
