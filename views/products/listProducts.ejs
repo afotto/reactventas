@@ -24,15 +24,22 @@
                         </p>
                         <h5>$ <%= casas[i].price %>
                         </h5>
-                        <a href="/products/edit<%=i+1%>">Editar</a>
+                        <div class="botones">
+                            <form action="/products/edit<%=i+1%>">
+                                <button>Editar</button>
+                            </form>
+                            <form action="/products/listado?_method=delete" method="POST">
+                                <button class="borrar">Borrar</button>
+                            </form>
+                        </div>
                         <% } %>
+
 
                 </section>
 
 
                 <form method="get">
                     <a href="/products/create">Crear</a>
-                    <a href="/">Borrar</a>
                 </form>
 
             </main>

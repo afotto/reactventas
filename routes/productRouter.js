@@ -10,6 +10,7 @@ router.get('/products/edit:id', controladorproduct.showEdit);
 
 router.get('/products/listado',controladorproduct.showList);
 router.put('/products/listado',controladorproduct.showList);
+router.delete('/products/listado',controladorproduct.showDelete);
 
 router.get('/products/create', controladorproduct.showCreate);
 

@@ -34,8 +34,11 @@ let productController = {
 
     showCreado: (req, res) => {
         res.send("Recibe datos de formulario");
-    }
+    },
     
+    showDelete: (req,res) => {
+        res.send('Recibe datos de elemento borrado');
+    }
 }
 
 
