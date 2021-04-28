@@ -25,15 +25,27 @@ let productController = {
     },
 
     showList: (req, res) => {
+        console.log(casas)
         res.render ('products/listProducts', {casas})
     },
 
-    showCreate: (req, res) => {
-        res.render('./products/newProduct.ejs');
+    create: (req, res) => {
+        res.render ('products/newProduct')
     },
 
-    showCreado: (req, res) => {
-        res.send("Recibe datos de formulario");
+    store: (req, res) => {
+        // Atrapo los contenido del formulario
+        const product = req.body;
+        // Verificar si viene un archivo, para nombrarlo  
+        product.image = req.file ? req.file.filename : '';
+        // El id
+        let id = casas.length + 1;
+        product.id = id.toString();
+        console.log(product);
+
+        casas.push(product);
+
+        res.redirect('/')
     },
     
     showDelete: (req,res) => {

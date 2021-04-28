@@ -10,7 +10,7 @@
 
             <main class="main">
                 <h3>Alta de productos</h3>
-                <form action="/products" method="POST" class="form">
+                <form action="/products/store" method="POST" enctype="multipart/form-data">
                     <div class="campo">
                         <label for="name">Nombre</label>
                         <input type="text" name="name" ">
@@ -20,8 +20,8 @@
                         <input type="text" name="descrip" ">
                     </div>
                     <div class="campo">
-                        <label for="imagen">Imagen</label>
-                        <input type="file" name="imagen">
+                        <label>Imagen</label>
+                        <input type="file" name="image">
                     </div>
                     <div class="campo">
                         <label for="categ">Categoría</label>
