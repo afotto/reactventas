@@ -1,0 +1,92 @@
+[{
+    "id": 1,
+    "Nombre": "firstName",
+    "Apellido": "lastName",
+    "Email":"email",
+    "Contraseña": "password",
+    "Categoria": "category",
+    "Imagen": "foto1.jpg"
+  }, 
+  
+  {
+    "id": 2,
+    "Nombre": "firstName",
+    "Apellido": "lastName",
+    "Email":"email",
+    "Contraseña": "password",
+    "Categoria": "category",
+    "Imagen": "foto2.jpg"
+},
+{
+    "id": 3,
+    "Nombre": "firstName",
+    "Apellido": "lastName",
+    "Email":"email",
+    "Contraseña": "password",
+    "Categoria": "category",
+    "Imagen": "foto3.jpg"
+},
+{
+    "id": 4,
+    "Nombre": "firstName",
+    "Apellido": "lastName",
+    "Email":"email",
+    "Contraseña": "password",
+    "Categoria": "category",
+    "Imagen": "foto4.jpg"
+},
+{
+    "id": 5,
+    "Nombre": "firstName",
+    "Apellido": "lastName",
+    "Email":"email",
+    "Contraseña": "password",
+    "Categoria": "category",
+    "Imagen": "foto5.jpg"
+},
+{
+    "id": 6,
+    "Nombre": "firstName",
+    "Apellido": "lastName",
+    "Email":"email",
+    "Contraseña": "password",
+    "Categoria": "category",
+    "Imagen": "foto6.jpg"
+},
+{
+    "id": 7,
+    "Nombre": "firstName",
+    "Apellido": "lastName",
+    "Email":"email",
+    "Contraseña": "password",
+    "Categoria": "category",
+    "Imagen": "foto7.jpg"
+},
+{
+    "id": 8,
+    "Nombre": "firstName",
+    "Apellido": "lastName",
+    "Email":"email",
+    "Contraseña": "password",
+    "Categoria": "category",
+    "Imagen": "foto8.jpg"
+},
+{
+    "id": 9,
+    "Nombre": "firstName",
+    "Apellido": "lastName",
+    "Email":"email",
+    "Contraseña": "password",
+    "Categoria": "category",
+    "Imagen": "foto9.jpg"
+},
+{
+    "id": 10,
+    "Nombre": "firstName",
+    "Apellido": "lastName",
+    "Email":"email",
+    "Contraseña": "password",
+    "Categoria": "category",
+    "Imagen": "foto10.jpg"
+}
+]
