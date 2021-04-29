@@ -16,7 +16,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 
-router.delete('/delete/:id' , controladorproduct.delete );
+router.delete('/:id' , controladorproduct.delete );
 
 router.get('/detail/', controladorproduct.detalle);
 
