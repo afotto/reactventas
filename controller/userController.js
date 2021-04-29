@@ -1,10 +1,14 @@
+const jsonDB = require ('../model/jsonDatabase');
+const userModel = jsonDB ('users');
+
+
 let userController = {
 
-    showLogin: (req, res) => {
+    login: (req, res) => {
             res.render('users/login')
         },
 
-    showRegister: (req, res) => {
+    register: (req, res) => {
         res.render('users/register')
     }
 }

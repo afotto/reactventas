@@ -10,8 +10,8 @@ const model = function (name) {
     console.log(name)
     return {
 
-        tablePath: path.resolve(__dirname, '../data', 'products.json'),//Busco el archivp - falta generalizar para que tb pueda tomar el users
-            
+        tablePath: path.resolve(__dirname, '../data', `${name}.json`),//Busco el archivp - falta generalizar para que tb pueda tomar el users
+    
 
         readFile: function() {
             let productsString = fs.readFileSync (this.tablePath, 'utf-8'); //Lo guardo en una variable string

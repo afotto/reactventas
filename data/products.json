@@ -424,5 +424,14 @@
   "price": "5874",
   "image": "img-1619722591899.JPG",
   "id": 22
+ },
+ {
+  "name": "Casa Ostende",
+  "descrip": "Departamentos",
+  "categ": "Casa",
+  "habit": "5",
+  "price": "23888",
+  "image": "img-1619724393900.jpg",
+  "id": 23
  }
 ]
