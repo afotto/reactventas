@@ -30,7 +30,7 @@ app.listen(puerto || 3000, function() {
 //Llamamos al ruteo
 app.use('/', homeRouter);
 app.use('/', userRouter);
-app.use('/', productRouter);
+app.use('/products', productRouter);
 
 
 

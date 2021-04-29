@@ -18,19 +18,19 @@ const upload = multer({ storage });
 
 
 
-router.get('/productDetail/', controladorproduct.showDetalle);
+router.get('/detail/', controladorproduct.detalle);
 
-router.get('/productCart/', controladorproduct.showCarrito);
+router.get('/cart/', controladorproduct.carrito);
 
-router.get('/products/edit:id', controladorproduct.showEdit);
+router.get('/edit:id', controladorproduct.edit);
 
-router.get('/products/listado',controladorproduct.list);
-router.put('/products/listado',controladorproduct.list);
-router.delete('/products/listado',controladorproduct.showDelete);
+router.get('/listado',controladorproduct.list);
+router.put('/listado',controladorproduct.list);
+router.delete('/listado',controladorproduct.delete);
 
 //Ottonello - Alta de producto sprint4
-router.get('/products/create', controladorproduct.create);
-router.post('/products/store', upload.single('image'), controladorproduct.store);
+router.get('/create', controladorproduct.create);
+router.post('/store', upload.single('image'), controladorproduct.store);
 
 
 module.exports = router;

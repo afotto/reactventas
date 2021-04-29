@@ -5,15 +5,15 @@ const productModel = jsonDB ('products');
 
 let productController = {
 
-    showDetalle: (req, res) => {
+    detalle: (req, res) => {
             res.render('products/productDetail')
         },
 
-    showCarrito: (req, res) => {
+    carrito: (req, res) => {
         res.render('products/productCart')
     },
 
-    showEdit: (req, res) => {
+    edit: (req, res) => {
        let product = casas.find(function (value) {
 
             return value.id === req.params.id
@@ -47,7 +47,7 @@ let productController = {
         res.redirect('/')
     },
     
-    showDelete: (req,res) => {
+    delete: (req,res) => {
         res.send('Recibe datos de elemento borrado');
     }
 }
