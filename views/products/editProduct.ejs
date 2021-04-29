@@ -13,7 +13,7 @@
                 <form action="/products/listado?_method=PUT" method="POST" class="form">
                     <div class="campo">
                         <label for="name">Nombre</label>
-                        <input type="text" name="name" value="<%= product.nombre %>">
+                        <input type="text" name="nombre" value="<%= product.nombre %>">
                     </div>
                     <div class="campo">
                         <label for="descrip">Descripción</label>
@@ -21,19 +21,35 @@
                     </div>
                     <div class="campo">
                         <label for="imagen">Imagen</label>
-                        <input type="file" name="imagen">
+                        <input type="file" name="image">
                     </div>
                     <div class="campo">
                         <label for="categ">Categoría</label>
-                        <input type="text" name="categ" value="<%= product.categoria %>">
+                        <input type="text" name="categoria" value="<%= product.categoria %>">
                     </div>
                     <div class="campo">
                         <label for="habit">Cantidad de Habitaciones</label>
-                        <input type="text" name="habit" value="<%= product.cantHabitaciones %>" class="habit">
+                        <input type="text" name="cantHabitaciones" value="<%= product.cantHabitaciones %>" class="habit">
                     </div>
                     <div class="campo">
                         <label for="price">Precio</label>
                         <input type="number" name="price" value="<%= product.price %>" class="precio">
+                    </div>
+                    <div class="campo">
+                        <label for="location">Ubicacion</label>
+                        <input type="text" name="ubicacion" value="<%= product.ubicacion %>">
+                    </div>
+                    <div class="campo">
+                        <label for="city">Ciudad</label>
+                        <input type="text" name="ciudad" value="<%= product.ciudad %>">
+                    </div>
+                    <div class="campo">
+                        <label for="terms">Condiciones</label>
+                        <input type="text" name="condiciones" value="<%= product.condiciones %>">
+                    </div>
+                    <div class="campo">
+                        <label for="services">Servicios</label>
+                        <input type="text" name="servicios" value="<%= product.servicios %>">
                     </div>
 
                     <button type="submit" class="button">Actualizar</button>
