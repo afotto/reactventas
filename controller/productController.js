@@ -1,5 +1,7 @@
-//requerimos el array de casas
-let casas = require ('../data/datosProductos')
+//Llamo al modelo
+const jsonDB = require ('../model/jsonDatabase');
+//Traigo los métodos para producto
+const productModel = jsonDB ('products');
 
 let productController = {
 
@@ -24,9 +26,10 @@ let productController = {
         }
     },
 
-    showList: (req, res) => {
-        console.log(casas)
-        res.render ('products/listProducts', {casas})
+    list: (req, res) => {
+        let casas = productModel.all(); 
+        console.log(casas[2]);
+         res.render ('products/listProducts', {casas});
     },
 
     create: (req, res) => {
@@ -38,12 +41,8 @@ let productController = {
         const product = req.body;
         // Verificar si viene un archivo, para nombrarlo  
         product.image = req.file ? req.file.filename : '';
-        // El id
-        let id = casas.length + 1;
-        product.id = id.toString();
-        console.log(product);
-
-        casas.push(product);
+        //Delego la responsabilidad al modelo para crear el producto
+        productModel.create(product);
 
         res.redirect('/')
     },

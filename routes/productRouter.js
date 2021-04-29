@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
+const controladorproduct = require('../controller/productController');
+
 //Configuración de multer para archivo de producto
 const multer = require('multer');
 const path = require('path');
@@ -10,10 +12,11 @@ const storage = multer.diskStorage({
         cb(null, 'img-' + Date.now() + path.extname(file.originalname));
     }
 });
+
 const upload = multer({ storage });
 
 
-const controladorproduct = require('../controller/productController');
+
 
 router.get('/productDetail/', controladorproduct.showDetalle);
 
@@ -21,8 +24,8 @@ router.get('/productCart/', controladorproduct.showCarrito);
 
 router.get('/products/edit:id', controladorproduct.showEdit);
 
-router.get('/products/listado',controladorproduct.showList);
-router.put('/products/listado',controladorproduct.showList);
+router.get('/products/listado',controladorproduct.list);
+router.put('/products/listado',controladorproduct.list);
 router.delete('/products/listado',controladorproduct.showDelete);
 
 //Ottonello - Alta de producto sprint4
