@@ -16,7 +16,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 
-
+router.delete('/delete/:id' , controladorproduct.delete );
 
 router.get('/detail/', controladorproduct.detalle);
 
@@ -26,7 +26,6 @@ router.get('/edit:id', controladorproduct.edit);
 
 router.get('/listado',controladorproduct.list);
 router.put('/listado',controladorproduct.list);
-router.delete('/listado',controladorproduct.delete);
 
 //Ottonello - Alta de producto sprint4
 router.get('/create', controladorproduct.create);

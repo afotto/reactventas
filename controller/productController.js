@@ -12,6 +12,13 @@ let productController = {
     carrito: (req, res) => {
         res.render('products/productCart')
     },
+    
+    delete: (req,res) => {
+        console.log('borrado')
+        productModel.delete(req.params.id);
+
+        res.redirect('/');
+    },
 
     edit: (req, res) => {
        let product = casas.find(function (value) {
@@ -45,10 +52,6 @@ let productController = {
         productModel.create(product);
 
         res.redirect('/')
-    },
-    
-    delete: (req,res) => {
-        res.send('Recibe datos de elemento borrado');
     }
 }
 
