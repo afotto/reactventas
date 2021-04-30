@@ -14,13 +14,14 @@ let productController = {
     },
 
     edit: (req, res) => {
-       let product = casas.find(function (value) {
+        //console.log('productController.edit');
+        //console.log(req.params.id);
+        let casa = productModel.find(req.params.id)
+        //console.log(casa)
 
-            return value.id === req.params.id
-        })
 
-        if (product) {
-            res.render('products/editProduct', { product });
+        if (casa) {
+            res.render('products/editProduct', {casa});
         } else {
             res.render('error404');
         }
@@ -28,7 +29,7 @@ let productController = {
 
     list: (req, res) => {
         let casas = productModel.all(); 
-        console.log(casas[2]);
+        //console.log(casas[2]);
          res.render ('products/listProducts', {casas});
     },
 
@@ -49,7 +50,19 @@ let productController = {
     
     delete: (req,res) => {
         res.send('Recibe datos de elemento borrado');
-    }
+    },
+    update: (req, res) =>{
+        //console.log('Entro en update');
+        let casa = req.body;
+        //console.log(casa);
+        //console.log('estoy buscando id');
+       // console.log(req.params.id);
+        casa.id = req.params.id;
+
+        casa.image = req.file ? req.file.filename : '';
+        productModel.edit(casa);
+        res.redirect ('/products/listado');
+    },
 }
 
 

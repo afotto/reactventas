@@ -1,26 +1,12 @@
 [
  {
-  "id": 1,
-  "nombre": "Miracle at St. Anna",
+  "name": "Miracle at St. Anna ",
   "descrip": "tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate",
-  "image": "img1.jpg",
-  "categoria": 4,
-  "cantHabitaciones": 4,
-  "price": 19644,
-  "ubicacion": "7 Steensland Avenue",
-  "ciudad": "Krenggan",
-  "condiciones": "velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas",
-  "servicios": [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
-  ]
+  "categ": "4",
+  "habit": "4",
+  "price": "19644",
+  "id": "1",
+  "image": "img-1619782199721.JPG"
  },
  {
   "id": 2,
@@ -372,58 +358,41 @@
   ]
  },
  {
-  "id": 19,
-  "nombre": "23 Paces to Baker Street",
+  "name": "23 Paces to Baker Street -GUILLE",
   "descrip": "accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis",
-  "image": "img3.jpg",
-  "categoria": 3,
-  "cantHabitaciones": 3,
-  "price": 25934,
-  "ubicacion": "8316 Sheridan Road",
-  "ciudad": "Yuncao",
-  "condiciones": "nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in",
-  "servicios": [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
-  ]
- },
- {
-  "id": 20,
-  "nombre": "Fragile",
-  "descrip": "sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh",
-  "image": "img4.jpg",
-  "categoria": 1,
-  "cantHabitaciones": 5,
-  "price": 27024,
-  "ubicacion": "34825 Northview Street",
-  "ciudad": "Tangyin",
-  "condiciones": "et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit",
-  "servicios": [
-   {},
-   {}
-  ]
- },
- {
-  "name": "prueba5",
-  "descrip": "prueba Guille",
-  "categ": "2 estrellas",
-  "habit": "1",
-  "price": "8594",
   "image": "",
-  "id": 21
+  "categ": "3",
+  "habit": "3",
+  "price": "25934",
+  "id": "19"
+ },
+ {
+  "name": "Fragile",
+  "descrip": "sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh",
+  "imagen": "",
+  "categ": "1",
+  "habit": "5",
+  "price": "27024",
+  "id": "20",
+  "image": ""
+ },
+ {
+  "name": "NOMBRE GUILLE",
+  "descrip": "prueba Guille",
+  "image": "img5.JPG",
+  "categ": "",
+  "habit": "",
+  "price": "8594",
+  "id": "21"
  },
  {
   "name": "PRUEBA GULLE",
   "descrip": "PARA PROBAR",
-  "categ": "5 estrellas",
-  "habit": "4",
+  "image": "",
+  "categ": "",
+  "habit": "",
   "price": "5874",
-  "image": "img-1619722591899.JPG",
-  "id": 22
+  "id": "22"
  },
  {
   "name": "Casa Ostende",
@@ -433,5 +402,14 @@
   "price": "23888",
   "image": "img-1619724393900.jpg",
   "id": 23
+ },
+ {
+  "name": "CASA PRUEBA 6",
+  "descrip": "PARA PROBAR",
+  "categ": "5 estrellas",
+  "habit": "6",
+  "price": "58974",
+  "image": "img-1619779647946.JPG",
+  "id": 24
  }
 ]

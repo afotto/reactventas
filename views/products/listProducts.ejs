@@ -16,7 +16,7 @@
                     <% for (let i=0; i<casas.length; i++) {%>
 
                         <h3>
-                            <%= casas[i].nombre %>
+                            <%= casas[i].name %>
                         </h3>
                         <!-- <img src="/images/img<%=i+1%>.jpg" alt="" class="listProductsImage"> -->
                         <img src="/images/<%= casas[i].image %>" alt="" class="listProductsImage">
@@ -25,8 +25,9 @@
                         </p>
                         <h5>$<%= new Intl.NumberFormat('de-DE', { style: 'decimal' }).format(casas[i].price) %>
                         </h5>
+                        
                         <div class="botones">
-                            <form action="/products/edit<%=i+1%>">
+                            <form action="/products/edit/<%= casas[i].id %>">
                                 <button>Editar</button>
                             </form>
                             <form action="/products/listado?_method=delete" method="POST">

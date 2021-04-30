@@ -10,30 +10,30 @@
 
             <main class="main">
                 <h3>Edición de productos</h3>
-                <form action="/products/listado?_method=PUT" method="POST" class="form">
+                <form action="/products/edit/<%= casa.id %>?_method=PUT" method="POST" class="form" enctype="multipart/form-data">
                     <div class="campo">
                         <label for="name">Nombre</label>
-                        <input type="text" name="name" value="<%= product.nombre %>">
+                        <input type="text" name="name" value="<%= casa.name %>">
                     </div>
                     <div class="campo">
                         <label for="descrip">Descripción</label>
-                        <input type="text" name="descrip" value="<%= product.descrip %>">
+                        <input type="text" name="descrip" value="<%= casa.descrip %>">
                     </div>
                     <div class="campo">
-                        <label for="imagen">Imagen</label>
-                        <input type="file" name="imagen">
+                        <label for="image">Imagen</label>
+                        <input type="file" name="image">
                     </div>
                     <div class="campo">
                         <label for="categ">Categoría</label>
-                        <input type="text" name="categ" value="<%= product.categoria %>">
+                        <input type="text" name="categ" value="<%= casa.categ %>">
                     </div>
                     <div class="campo">
                         <label for="habit">Cantidad de Habitaciones</label>
-                        <input type="text" name="habit" value="<%= product.cantHabitaciones %>" class="habit">
+                        <input type="text" name="habit" value="<%= casa.habit %>" class="habit">
                     </div>
                     <div class="campo">
                         <label for="price">Precio</label>
-                        <input type="number" name="price" value="<%= product.price %>" class="precio">
+                        <input type="number" name="price" value="<%= casa.price %>" class="precio">
                     </div>
 
                     <button type="submit" class="button">Actualizar</button>

@@ -18,14 +18,16 @@ const upload = multer({ storage });
 
 
 
+
 router.get('/detail/', controladorproduct.detalle);
 
 router.get('/cart/', controladorproduct.carrito);
 
-router.get('/edit:id', controladorproduct.edit);
+router.get('/edit/:id', controladorproduct.edit);
+router.put('/edit/:id', upload.single('image'), controladorproduct.update);
 
 router.get('/listado',controladorproduct.list);
-router.put('/listado',controladorproduct.list);
+
 router.delete('/listado',controladorproduct.delete);
 
 //Ottonello - Alta de producto sprint4
