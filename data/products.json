@@ -299,5 +299,18 @@
    {},
    {}
   ]
+ },
+ {
+  "nombre": "Casa Ostende",
+  "descrip": "Casa tradicional",
+  "categoria": "Casa",
+  "cantHabitaciones": "5",
+  "price": "1234",
+  "ubicacion": "Ostende",
+  "ciudad": "Pinamar",
+  "condiciones": "Excelentes",
+  "servicios": "123",
+  "image": "img-1619739275846.jpg",
+  "id": 21
  }
 ]

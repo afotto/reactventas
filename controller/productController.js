@@ -15,7 +15,7 @@ let productController = {
     
     delete: (req,res) => {
         console.log('borrado')
-        productModel.delete(req.params.id);
+        productModel.delete(req.params.id);  
 
         res.redirect('/');
     },
