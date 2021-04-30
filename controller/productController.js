@@ -12,6 +12,13 @@ let productController = {
     carrito: (req, res) => {
         res.render('products/productCart')
     },
+    
+    delete: (req,res) => {
+        console.log('borrado')
+        productModel.delete(req.params.id);
+
+        res.redirect('/');
+    },
 
     edit: (req, res) => {
         //console.log('productController.edit');

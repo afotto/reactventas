@@ -358,13 +358,17 @@
   ]
  },
  {
-  "name": "23 Paces to Baker Street -GUILLE",
+  "name": "PRUEBA EDIT",
   "descrip": "accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis",
-  "image": "",
-  "categ": "3",
+  "categ": "5",
   "habit": "3",
   "price": "25934",
-  "id": "19"
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "servicios": "",
+  "id": "19",
+  "image": "img-1619783124345.JPG"
  },
  {
   "name": "Fragile",
@@ -411,5 +415,18 @@
   "price": "58974",
   "image": "img-1619779647946.JPG",
   "id": 24
+ },
+ {
+  "nombre": "PRUEBA CREAR",
+  "descrip": "PRUEBA",
+  "categoria": "5 ESTRELLAS",
+  "cantHabitaciones": "6",
+  "price": "54897",
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "servicios": "",
+  "image": "img-1619783199777.JPG",
+  "id": 25
  }
 ]
