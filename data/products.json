@@ -1,5 +1,98 @@
 [
  {
+  "name": "Miracle at St. Anna ",
+  "descrip": "tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate",
+  "categ": "4",
+  "habit": "4",
+  "price": "19644",
+  "id": "1",
+  "image": "img-1619782199721.JPG"
+ },
+ {
+  "id": 2,
+  "nombre": "Timber Falls",
+  "descrip": "donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum",
+  "image": "img2.jpg",
+  "categoria": 2,
+  "cantHabitaciones": 6,
+  "price": 15821,
+  "ubicacion": "7 Farragut Park",
+  "ciudad": "Sherbrooke",
+  "condiciones": "proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla",
+  "servicios": [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ },
+ {
+  "id": 3,
+  "nombre": "Dogma",
+  "descrip": "consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus",
+  "image": "img3.jpg",
+  "categoria": 2,
+  "cantHabitaciones": 7,
+  "price": 22557,
+  "ubicacion": "8 Springview Hill",
+  "ciudad": "Reszel",
+  "condiciones": "turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id",
+  "servicios": [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ },
+ {
+  "id": 4,
+  "nombre": "Saturn 3",
+  "descrip": "nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia",
+  "image": "img4.jpg",
+  "categoria": 2,
+  "cantHabitaciones": 3,
+  "price": 4000,
+  "ubicacion": "6 Lawn Court",
+  "ciudad": "Paraparaumu",
+  "condiciones": "curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod",
+  "servicios": [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ },
+ {
+  "id": 5,
+  "nombre": "Simon of the Desert (Simón del desierto)",
+  "descrip": "ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam",
+  "image": "img1.jpg",
+  "categoria": 2,
+  "cantHabitaciones": 4,
+  "price": 16979,
+  "ubicacion": "048 Dapin Plaza",
+  "ciudad": "Jagüey Grande",
+  "condiciones": "ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate",
+  "servicios": [
+   {},
+   {}
+  ]
+ },
+ {
   "id": 6,
   "nombre": "Death Hunt",
   "descrip": "vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum",
@@ -265,52 +358,75 @@
   ]
  },
  {
-  "id": 19,
-  "nombre": "23 Paces to Baker Street",
+  "name": "PRUEBA EDIT",
   "descrip": "accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis",
-  "image": "img3.jpg",
-  "categoria": 3,
-  "cantHabitaciones": 3,
-  "price": 25934,
-  "ubicacion": "8316 Sheridan Road",
-  "ciudad": "Yuncao",
-  "condiciones": "nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in",
-  "servicios": [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
-  ]
+  "categ": "5",
+  "habit": "3",
+  "price": "25934",
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "servicios": "",
+  "id": "19",
+  "image": "img-1619783124345.JPG"
  },
  {
-  "id": 20,
-  "nombre": "Fragile",
+  "name": "Fragile",
   "descrip": "sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh",
-  "image": "img4.jpg",
-  "categoria": 1,
-  "cantHabitaciones": 5,
-  "price": 27024,
-  "ubicacion": "34825 Northview Street",
-  "ciudad": "Tangyin",
-  "condiciones": "et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit",
-  "servicios": [
-   {},
-   {}
-  ]
+  "imagen": "",
+  "categ": "1",
+  "habit": "5",
+  "price": "27024",
+  "id": "20",
+  "image": ""
  },
  {
-  "nombre": "Casa Ostende",
-  "descrip": "Casa tradicional",
-  "categoria": "Casa",
-  "cantHabitaciones": "5",
-  "price": "1234",
-  "ubicacion": "Ostende",
-  "ciudad": "Pinamar",
-  "condiciones": "Excelentes",
-  "servicios": "123",
-  "image": "img-1619739275846.jpg",
-  "id": 21
+  "name": "NOMBRE GUILLE",
+  "descrip": "prueba Guille",
+  "image": "img5.JPG",
+  "categ": "",
+  "habit": "",
+  "price": "8594",
+  "id": "21"
+ },
+ {
+  "name": "PRUEBA GULLE",
+  "descrip": "PARA PROBAR",
+  "image": "",
+  "categ": "",
+  "habit": "",
+  "price": "5874",
+  "id": "22"
+ },
+ {
+  "name": "Casa Ostende",
+  "descrip": "Departamentos",
+  "categ": "Casa",
+  "habit": "5",
+  "price": "23888",
+  "image": "img-1619724393900.jpg",
+  "id": 23
+ },
+ {
+  "name": "CASA PRUEBA 6",
+  "descrip": "PARA PROBAR",
+  "categ": "5 estrellas",
+  "habit": "6",
+  "price": "58974",
+  "image": "img-1619779647946.JPG",
+  "id": 24
+ },
+ {
+  "nombre": "PRUEBA CREAR",
+  "descrip": "PRUEBA",
+  "categoria": "5 ESTRELLAS",
+  "cantHabitaciones": "6",
+  "price": "54897",
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "servicios": "",
+  "image": "img-1619783199777.JPG",
+  "id": 25
  }
 ]

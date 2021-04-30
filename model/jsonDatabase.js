@@ -34,7 +34,8 @@ const model = function (name) {
 
     // Grabo el array que recibo por parámetro y lo paso a formato Json
         writeFile : function(contents) {
-            //console.log('entre en writeFile');
+            console.log('entre en writeFile');
+            console.log(contents);
             let tableContents = JSON.stringify(contents, null, ' ');
             fs.writeFileSync(this.tablePath, tableContents);
         },
@@ -59,19 +60,19 @@ const model = function (name) {
         },
 
         edit: function (row) {
-            //console.log('entre en productModel.edit');
-            //console.log(row);
+            console.log('entre en productModel.edit');
+            console.log(row);
             let rows = this.readFile();
-            //console.log(row);
+            
             let updateRows = rows.map(oneRow =>{
-                if(oneRow.id ==row.id){
+                if(oneRow.id == row.id){
                     return row;
                 }
                 return oneRow;
                 
             })
-            //console.log('datos a grabar');
-           //console.log(updateRows);
+            console.log('datos a grabar');
+           console.log(updateRows);
             this.writeFile(updateRows);
             
         },

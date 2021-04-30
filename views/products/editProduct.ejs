@@ -10,46 +10,46 @@
 
             <main class="main">
                 <h3>Edición de productos</h3>
-                <form action="/products/listado?_method=PUT" method="POST" class="form">
+                <form action="/products/edit/<%= casa.id %>?_method=PUT" method="POST" class="form" enctype="multipart/form-data">
                     <div class="campo">
                         <label for="name">Nombre</label>
-                        <input type="text" name="nombre" value="<%= product.nombre %>">
+                        <input type="text" name="name" value="<%= casa.name %>">
                     </div>
                     <div class="campo">
                         <label for="descrip">Descripción</label>
-                        <input type="text" name="descrip" value="<%= product.descrip %>">
+                        <input type="text" name="descrip" value="<%= casa.descrip %>">
                     </div>
                     <div class="campo">
-                        <label for="imagen">Imagen</label>
+                        <label for="image">Imagen</label>
                         <input type="file" name="image">
                     </div>
                     <div class="campo">
                         <label for="categ">Categoría</label>
-                        <input type="text" name="categoria" value="<%= product.categoria %>">
+                        <input type="text" name="categ" value="<%= casa.categ %>">
                     </div>
                     <div class="campo">
                         <label for="habit">Cantidad de Habitaciones</label>
-                        <input type="text" name="cantHabitaciones" value="<%= product.cantHabitaciones %>" class="habit">
+                        <input type="text" name="habit" value="<%= casa.habit %>" class="habit">
                     </div>
                     <div class="campo">
                         <label for="price">Precio</label>
-                        <input type="number" name="price" value="<%= product.price %>" class="precio">
+                        <input type="number" name="price" value="<%= casa.price %>" class="precio">
                     </div>
                     <div class="campo">
                         <label for="location">Ubicacion</label>
-                        <input type="text" name="ubicacion" value="<%= product.ubicacion %>">
+                        <input type="text" name="ubicacion" value="<%= casa.ubicacion %>">
                     </div>
                     <div class="campo">
                         <label for="city">Ciudad</label>
-                        <input type="text" name="ciudad" value="<%= product.ciudad %>">
+                        <input type="text" name="ciudad" value="<%= casa.ciudad %>">
                     </div>
                     <div class="campo">
                         <label for="terms">Condiciones</label>
-                        <input type="text" name="condiciones" value="<%= product.condiciones %>">
+                        <input type="text" name="condiciones" value="<%= casa.condiciones %>">
                     </div>
                     <div class="campo">
                         <label for="services">Servicios</label>
-                        <input type="text" name="servicios" value="<%= product.servicios %>">
+                        <input type="text" name="servicios" value="<%= casa.servicios %>">
                     </div>
 
                     <button type="submit" class="button">Actualizar</button>
