@@ -28,7 +28,7 @@ router.put('/edit/:id', upload.single('image'), controladorproduct.update);
 
 router.get('/listado',controladorproduct.list);
 
-router.delete('/listado',controladorproduct.delete);
+
 
 //Ottonello - Alta de producto sprint4
 router.get('/create', controladorproduct.create);

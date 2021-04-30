@@ -55,9 +55,7 @@ let productController = {
         res.redirect('/')
     },
     
-    delete: (req,res) => {
-        res.send('Recibe datos de elemento borrado');
-    },
+   
     update: (req, res) =>{
         //console.log('Entro en update');
         let casa = req.body;

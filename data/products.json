@@ -381,15 +381,6 @@
   "image": ""
  },
  {
-  "name": "NOMBRE GUILLE",
-  "descrip": "prueba Guille",
-  "image": "img5.JPG",
-  "categ": "",
-  "habit": "",
-  "price": "8594",
-  "id": "21"
- },
- {
   "name": "PRUEBA GULLE",
   "descrip": "PARA PROBAR",
   "image": "",
@@ -415,18 +406,5 @@
   "price": "58974",
   "image": "img-1619779647946.JPG",
   "id": 24
- },
- {
-  "nombre": "PRUEBA CREAR",
-  "descrip": "PRUEBA",
-  "categoria": "5 ESTRELLAS",
-  "cantHabitaciones": "6",
-  "price": "54897",
-  "ubicacion": "",
-  "ciudad": "",
-  "condiciones": "",
-  "servicios": "",
-  "image": "img-1619783199777.JPG",
-  "id": 25
  }
 ]
