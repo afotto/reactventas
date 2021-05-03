@@ -1,18 +1,5 @@
 [
  {
-  "nombre": "prueba 234",
-  "descrip": "",
-  "categ": "",
-  "habit": "",
-  "price": "",
-  "ubicacion": "",
-  "ciudad": "",
-  "condiciones": "",
-  "servicios": "",
-  "id": "1",
-  "image": "img-1620004157388.JPG"
- },
- {
   "id": 2,
   "nombre": "Timber Falls",
   "descrip": "donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum",
@@ -382,19 +369,6 @@
   "habit": "5",
   "price": "27024",
   "id": "20",
-  "image": ""
- },
- {
-  "nombre": "PRUEBA CREAR 10",
-  "descrip": "PARA PROBAR",
-  "categ": "5 estrellas",
-  "habit": "4",
-  "price": "5874",
-  "ubicacion": "Mar del Plata",
-  "ciudad": "VICENTE LOPEZ",
-  "condiciones": "jgdggtxs",
-  "servicios": "fgsgbgfys",
-  "id": "22",
   "image": ""
  },
  {
