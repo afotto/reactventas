@@ -13,28 +13,22 @@
 
                 <h1>Listado de productos</h1>
                 <section class="listadoDeProductos">
-                    <% for (let i=0; i<casas.length; i++) {%>
+                    <% casas.forEach (casa => {%>
 
-                        <h3>
-                            <%= casas[i].name %>
-                        </h3>
-                        <!-- <img src="/images/img<%=i+1%>.jpg" alt="" class="listProductsImage"> -->
-                        <img src="/images/<%= casas[i].image %>" alt="" class="listProductsImage">
-                        <p>
-                            <%= casas[i].descrip %>
-                        </p>
-                        <h5>$<%= new Intl.NumberFormat('de-DE', { style: 'decimal' }).format(casas[i].price) %>
-                        </h5>
-                        
+                        <%- include ('../partials/product', {casa}) %>      
+
                         <div class="botones">
-                            <form action="/products/edit/<%= casas[i].id %>">
+                            <form action="/products/<%= casa.id %>">
+                                <button>Detalle</button>
+                            </form>
+                            <form action="/products/<%= casa.id %>/edit" class="editar">
                                 <button>Editar</button>
                             </form>
-                            <form action="/products/<%= casas[i].id %>?_method=DELETE" method="POST">
+                            <form action="/products/<%= casa.id %>?_method=DELETE" method="POST">
                                 <button class="borrar">Borrar</button>
                             </form>
                         </div>
-                        <% } %>
+                        <% } )%>
 
 
                 </section>

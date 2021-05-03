@@ -10,10 +10,10 @@
 
             <main class="main">
                 <h3>Edición de productos</h3>
-                <form action="/products/edit/<%= casa.id %>?_method=PUT" method="POST" class="form" enctype="multipart/form-data">
+                <form action="/products/<%= casa.id %>/edit?_method=PUT" method="POST" class="form" enctype="multipart/form-data">
                     <div class="campo">
-                        <label for="name">Nombre</label>
-                        <input type="text" name="name" value="<%= casa.name %>">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" value="<%= casa.nombre %>">
                     </div>
                     <div class="campo">
                         <label for="descrip">Descripción</label>

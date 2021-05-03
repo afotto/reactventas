@@ -15,24 +15,30 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
+router.get('/detail/', controladorproduct.detalle);
+router.get('/cart/', controladorproduct.carrito);
+
+router.get('/',controladorproduct.list);
+
+//Ottonello - Alta de producto sprint4
+router.get('/create', controladorproduct.create);
+router.post('/', upload.single('image'), controladorproduct.store);
+
+router.get('/:id', controladorproduct.detalleCrud);
 
 router.delete('/:id' , controladorproduct.delete );
 
 
-router.get('/detail/', controladorproduct.detalle);
 
-router.get('/cart/', controladorproduct.carrito);
 
-router.get('/edit/:id', controladorproduct.edit);
-router.put('/edit/:id', upload.single('image'), controladorproduct.update);
-
-router.get('/listado',controladorproduct.list);
+router.get('/:id/edit', controladorproduct.edit);
+router.put('/:id/edit', upload.single('image'), controladorproduct.update);
 
 
 
-//Ottonello - Alta de producto sprint4
-router.get('/create', controladorproduct.create);
-router.post('/store', upload.single('image'), controladorproduct.store);
+
+
+
 
 
 module.exports = router;

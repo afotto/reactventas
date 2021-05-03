@@ -1,12 +1,16 @@
 [
  {
-  "name": "Miracle at St. Anna ",
-  "descrip": "tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate",
-  "categ": "4",
-  "habit": "4",
-  "price": "19644",
+  "nombre": "prueba 234",
+  "descrip": "",
+  "categ": "",
+  "habit": "",
+  "price": "",
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "servicios": "",
   "id": "1",
-  "image": "img-1619782199721.JPG"
+  "image": "img-1620004157388.JPG"
  },
  {
   "id": 2,
@@ -381,13 +385,17 @@
   "image": ""
  },
  {
-  "name": "PRUEBA GULLE",
+  "nombre": "PRUEBA CREAR 10",
   "descrip": "PARA PROBAR",
-  "image": "",
-  "categ": "",
-  "habit": "",
+  "categ": "5 estrellas",
+  "habit": "4",
   "price": "5874",
-  "id": "22"
+  "ubicacion": "Mar del Plata",
+  "ciudad": "VICENTE LOPEZ",
+  "condiciones": "jgdggtxs",
+  "servicios": "fgsgbgfys",
+  "id": "22",
+  "image": ""
  },
  {
   "name": "Casa Ostende",
@@ -406,5 +414,18 @@
   "price": "58974",
   "image": "img-1619779647946.JPG",
   "id": 24
+ },
+ {
+  "nombre": "PRUEBA 20",
+  "descrip": "PARA PROBAR",
+  "categoria": "",
+  "cantHabitaciones": "",
+  "price": "",
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "servicios": "",
+  "image": "img-1619996578505.JPG",
+  "id": 25
  }
 ]
