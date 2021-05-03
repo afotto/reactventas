@@ -401,5 +401,18 @@
   "servicios": "",
   "image": "img-1619996578505.JPG",
   "id": 25
+ },
+ {
+  "nombre": "Prueba tino",
+  "descrip": "Prueba tino",
+  "categoria": "4",
+  "cantHabitaciones": "3",
+  "price": "21100",
+  "ubicacion": "",
+  "ciudad": "mar del plata",
+  "condiciones": "",
+  "servicios": "",
+  "image": "",
+  "id": 26
  }
 ]
