@@ -19,9 +19,12 @@
                         <label for="descrip">Descripción</label>
                         <input type="text" name="descrip" value="<%= casa.descrip %>">
                     </div>
-                    <div class="campo">
-                        <label for="image">Imagen</label>
-                        <input type="file" name="image">
+                        <div class="campo">
+                            <label for="image">Imagen</label>
+                            <input type="file" name="image">
+                            <input type="hidden" name="oldImage"
+                            value="<%= locals.casa ? casa.image : '0' %>">
+                        </div>
                     </div>
                     <div class="campo">
                         <label for="categ">Categoría</label>

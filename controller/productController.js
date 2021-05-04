@@ -72,10 +72,20 @@ let productController = {
        // console.log(req.params.id);
         casa.id = req.params.id;
 
-        casa.image = req.file ? req.file.filename : '';
+        /*casa.image = req.file ? req.file.filename : '';
         productModel.edit(casa);
-        res.redirect ('/products');
-    },
+        res.redirect ('/products');*/
+
+
+        if (req.file===undefined) {
+        casa.image = req.body.oldImage
+        } else {
+        casa.image = req.file.filename 
+        }
+        delete casa.oldImage;
+        productModel.edit(casa);
+        res.redirect('/products')
+    }
 }
 
 
