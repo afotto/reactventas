@@ -12,23 +12,23 @@
                 <h3>Alta de productos</h3>
                 <form action="/products" method="POST" enctype="multipart/form-data">
                     <div class="campo">
-                        <label for="name">Nombre</label>
-                        <input type="text" name="nombre">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" >
                     </div>
                     <div class="campo">
                         <label for="descrip">Descripción</label>
                         <input type="text" name="descrip">
                     </div>
                     <div class="campo">
-                        <label for="imagen">Imagen</label>
+                        <label for="image">Imagen</label>
                         <input type="file" name="image">
                     </div>
                     <div class="campo">
-                        <label for="categ">Categoría</label>
+                        <label for="categoria">Categoría</label>
                         <input type="text" name="categoria" >
                     </div>
                     <div class="campo">
-                        <label for="habit">Cantidad de Habitaciones</label>
+                        <label for="cantHabitaciones">Cantidad de Habitaciones</label>
                         <input type="text" name="cantHabitaciones"  class="habit">
                     </div>
                     <div class="campo">
@@ -47,9 +47,23 @@
                         <label for="terms">Condiciones</label>
                         <input type="text" name="condiciones">
                     </div>
-                    <div class="campo">
-                        <label for="services">Servicios</label>
-                        <input type="text" name="servicios">
+                   <div class="campo">
+                        <label for="servicios">Servicios:</label> <br>
+                        <input type="checkbox" name="servicios" value="wifi">
+                        <label for="servicios">Wi-fi</label> 
+                        <br>
+                        <input type="checkbox" name="servicios" value="pileta">
+                        <label for="servicios">Pileta</label>
+                        <br>
+                        <input type="checkbox" name="servicios" value="estacionamiento"> 
+                        <label for="servicios">Estacionamiento</label>
+                        <br>
+                        <input type="checkbox" name="servicios" value="parrilla"> 
+                        <label for="servicios">Parrilla</label>
+                        <br>
+                        <input type="checkbox" name="servicios" value="aireacondicionado">
+                        <label for="servicios">Aire acondicionado</label>
+                         <br>
                     </div>
                     
 

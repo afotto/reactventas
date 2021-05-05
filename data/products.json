@@ -349,70 +349,52 @@
   ]
  },
  {
-  "nombre": "prueba 2",
-  "descrip": "hola",
-  "categ": "5",
-  "habit": "3",
-  "price": "123",
+  "nombre": "pruebatino2",
+  "descrip": "prueba2",
+  "categoria": "4",
+  "cantHabitaciones": "3",
+  "price": "12000",
   "ubicacion": "",
-  "ciudad": "",
-  "condiciones": "",
+  "ciudad": "gesell",
+  "condiciones": "ninguna",
   "servicios": "",
-  "id": "19",
-  "image": "img-1619783124345.JPG"
+  "image": "img-1620180385192.png",
+  "id": 19
  },
  {
-  "name": "Fragile",
-  "descrip": "sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh",
-  "imagen": "",
-  "categ": "1",
-  "habit": "5",
-  "price": "27024",
+  "nombre": "pruebatino3",
+  "descrip": "prueba3",
+  "categ": "",
+  "habit": "",
+  "price": "11000",
+  "ubicacion": "",
+  "ciudad": "pinamar",
+  "condiciones": "ninguna",
+  "servicios": [
+   "wifi",
+   "estacionamiento",
+   "aireacondicionado"
+  ],
   "id": "20",
-  "image": ""
+  "image": "img-1620181157781.png"
  },
  {
-  "name": "Casa Ostende",
-  "descrip": "Departamentos",
-  "categ": "Casa",
-  "habit": "5",
-  "price": "23888",
-  "image": "img-1619724393900.jpg",
-  "id": 23
- },
- {
-  "name": "CASA PRUEBA 6",
-  "descrip": "PARA PROBAR",
-  "categ": "5 estrellas",
-  "habit": "6",
-  "price": "58974",
-  "image": "img-1619779647946.JPG",
-  "id": 24
- },
- {
-  "nombre": "prueba nuevo",
-  "descrip": "prueba",
-  "categ": "",
-  "habit": "",
-  "price": "159",
+  "nombre": "pruebatino4",
+  "descrip": "prueba4",
+  "categoria": "5",
+  "cantHabitaciones": "5",
+  "price": "27000",
   "ubicacion": "",
-  "ciudad": "",
-  "condiciones": "",
-  "servicios": "",
-  "id": "25",
-  "image": "img-1620150134792.jpg"
- },
- {
-  "nombre": "Prueba ultima",
-  "descrip": "Prueba ultima de ultima",
-  "categ": "",
-  "habit": "",
-  "price": "21100",
-  "ubicacion": "",
-  "ciudad": "mar del plata",
-  "condiciones": "",
-  "servicios": "",
-  "id": "26",
-  "image": "img-1620150281860.jpg"
+  "ciudad": "carilo",
+  "condiciones": "ninguna",
+  "servicios": [
+   "wifi",
+   "pileta",
+   "estacionamiento",
+   "parrilla",
+   "aireacondicionado"
+  ],
+  "image": "img-1620181634948.png",
+  "id": 21
  }
 ]

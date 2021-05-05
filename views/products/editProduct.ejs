@@ -51,8 +51,26 @@
                         <input type="text" name="condiciones" value="<%= casa.condiciones %>">
                     </div>
                     <div class="campo">
-                        <label for="services">Servicios</label>
-                        <input type="text" name="servicios" value="<%= casa.servicios %>">
+                        <label for="services">Servicios</label> <br>
+                        <input type="checkbox" name="servicios" value="wifi" >
+                        <label for="servicios">Wi-fi</label> 
+                        <br>
+                        <input type="checkbox" name="servicios" value="pileta">
+                        <label for="servicios">Pileta</label>
+                        <br>
+                        <input type="checkbox" name="servicios" value="estacionamiento"> 
+                        <label for="servicios">Estacionamiento</label>
+                        <br>
+                        <input type="checkbox" name="servicios" value="parrilla"> 
+                        <label for="servicios">Parrilla</label>
+                        <br>
+                        <input type="checkbox" name="servicios" value="aireacondicionado">
+                        <label for="servicios">Aire acondicionado</label>
+                         <br>
+
+                    <!--
+                        <input type="text" name="servicios" value="<%= casa.servicios %>">  
+                    -->
                     </div>
 
                     <button type="submit" class="button">Actualizar</button>
