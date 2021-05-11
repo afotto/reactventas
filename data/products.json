@@ -351,15 +351,14 @@
  {
   "nombre": "pruebatino2",
   "descrip": "prueba2",
-  "categoria": "4",
-  "cantHabitaciones": "3",
+  "categ": "",
+  "habit": "",
   "price": "12000",
   "ubicacion": "",
   "ciudad": "gesell",
   "condiciones": "ninguna",
-  "servicios": "",
-  "image": "img-1620180385192.png",
-  "id": 19
+  "id": "19",
+  "image": "img-1620733797679.JPG"
  },
  {
   "nombre": "pruebatino3",
@@ -370,13 +369,8 @@
   "ubicacion": "",
   "ciudad": "pinamar",
   "condiciones": "ninguna",
-  "servicios": [
-   "wifi",
-   "estacionamiento",
-   "aireacondicionado"
-  ],
   "id": "20",
-  "image": "img-1620181157781.png"
+  "image": "img-1620733984342.JPG"
  },
  {
   "nombre": "pruebatino4",
@@ -396,5 +390,17 @@
   ],
   "image": "img-1620181634948.png",
   "id": 21
+ },
+ {
+  "nombre": "PRUEBAGUILLE",
+  "descrip": "PARA PROBAR",
+  "categoria": "",
+  "cantHabitaciones": "",
+  "price": "",
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "image": "img-1620734090074.JPG",
+  "id": 22
  }
 ]
