@@ -3,7 +3,7 @@ const fs = require ('fs');
 //Requiero path para resolver las rutas 
 const path = require ('path');
 
-
+ 
 //Traigo la info del archivo
 const model = function (name) {
     console.log('entre al modelo')
@@ -75,6 +75,12 @@ const model = function (name) {
            console.log(updateRows);
             this.writeFile(updateRows);
             
+        },
+
+        findByField: function (field, text) {
+            let allUsers = this.all();
+            let userFound = allUsers.find(oneUser => oneUser[field] === text);
+            return userFound;
         },
 
     delete: function (id) {

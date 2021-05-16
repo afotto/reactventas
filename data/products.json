@@ -1,29 +1,5 @@
 [
  {
-  "id": 2,
-  "nombre": "Timber Falls",
-  "descrip": "donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum",
-  "image": "img2.jpg",
-  "categoria": 2,
-  "cantHabitaciones": 6,
-  "price": 15821,
-  "ubicacion": "7 Farragut Park",
-  "ciudad": "Sherbrooke",
-  "condiciones": "proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla",
-  "servicios": [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
-  ]
- },
- {
   "id": 3,
   "nombre": "Dogma",
   "descrip": "consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus",
@@ -34,28 +10,6 @@
   "ubicacion": "8 Springview Hill",
   "ciudad": "Reszel",
   "condiciones": "turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id",
-  "servicios": [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
-  ]
- },
- {
-  "id": 4,
-  "nombre": "Saturn 3",
-  "descrip": "nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia",
-  "image": "img4.jpg",
-  "categoria": 2,
-  "cantHabitaciones": 3,
-  "price": 4000,
-  "ubicacion": "6 Lawn Court",
-  "ciudad": "Paraparaumu",
-  "condiciones": "curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod",
   "servicios": [
    {},
    {},
@@ -402,5 +356,101 @@
   "condiciones": "",
   "image": "img-1620734090074.JPG",
   "id": 22
+ },
+ {
+  "nombre": "",
+  "descrip": "",
+  "categoria": "",
+  "cantHabitaciones": "",
+  "price": "",
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "image": "",
+  "id": 23
+ },
+ {
+  "nombre": "",
+  "descrip": "",
+  "categoria": "",
+  "cantHabitaciones": "",
+  "price": "",
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "image": "",
+  "id": 24
+ },
+ {
+  "nombre": "",
+  "descrip": "",
+  "categoria": "",
+  "cantHabitaciones": "",
+  "price": "",
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "image": "",
+  "id": 25
+ },
+ {
+  "nombre": "",
+  "descrip": "",
+  "categoria": "",
+  "cantHabitaciones": "",
+  "price": "",
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "image": "",
+  "id": 26
+ },
+ {
+  "nombre": "",
+  "descrip": "",
+  "categoria": "",
+  "cantHabitaciones": "",
+  "price": "",
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "image": "",
+  "id": 27
+ },
+ {
+  "nombre": "",
+  "descrip": "",
+  "categoria": "",
+  "cantHabitaciones": "",
+  "price": "",
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "image": "",
+  "id": 28
+ },
+ {
+  "nombre": "",
+  "descrip": "",
+  "categoria": "",
+  "cantHabitaciones": "",
+  "price": "",
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "image": "",
+  "id": 29
+ },
+ {
+  "nombre": "",
+  "descrip": "",
+  "categoria": "",
+  "cantHabitaciones": "",
+  "price": "",
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "image": "",
+  "id": 30
  }
 ]

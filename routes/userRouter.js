@@ -4,6 +4,7 @@ const controladorUser = require('../controller/userController');
 
 
 router.get('/login/', controladorUser.login);
+router.post('/login/', controladorUser.loginProcess);
 
 router.get('/register/', controladorUser.register);
 
