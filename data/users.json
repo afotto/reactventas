@@ -1,101 +1,101 @@
 [
-    {
-        "id":1,
-        "nombre":"Lainey",
-        "apellido":"Daouze",
-        "email":"ldaouze0@themeforest.net",
-        "contraseña":"JM3hfTgI",
-        "categoria":"user",
-        "imagen":"user_1.jpg"
-    },
-    
-    {
-        "id":2,
-        "nombre":"Emlyn",
-        "apellido":"Wapplington",
-        "email":"ewapplington1@elpais.com",
-        "contraseña":"OQq6yf",
-        "categoria":"user",
-        "imagen":"user_2.jpg"
-    },
-    
-    {
-        "id":3,
-        "nombre":"Fawn",
-        "apellido":"Westover",
-        "email":"fwestover2@alexa.com",
-        "contraseña":"76n0tc",
-        "categoria":"user",
-        "imagen":"user_3.jpg"
-    },
-    
-    {
-        "id":4,
-        "nombre":"Florenza",
-        "apellido":"Jaffray",
-        "email":"fjaffray3@washington.edu",
-        "contraseña":"4qhtBmRY",
-        "categoria":"user",
-        "imagen":"user_4.jpg"
-    },
-    
-    {
-        "id":5,
-        "nombre":"Inez",
-        "apellido":"Croisdall",
-        "email":"icroisdall4@blogger.com",
-        "contraseña":"kqMMu48iv",
-        "categoria":"user",
-        "imagen":"user_5.jpg"
-    },
-    
-    {
-        "id":6,
-        "nombre":"Vikki",
-        "apellido":"Sacase",
-        "email":"vsacase5@ebay.co.uk",
-        "contraseña":"Oqnlx4yS09",
-        "categoria":"user",
-        "imagen":"user_6.jpg"
-    },
-    
-    {
-        "id":7,
-        "nombre":"Nessi",
-        "apellido":"Wyllcock",
-        "email":"nwyllcock6@smh.com.au",
-        "contraseña":"ehcBml5",
-        "categoria":"user",
-        "imagen":"user_7.jpg"
-    },
-    
-    {
-        "id":8,
-        "nombre":"Bentley",
-        "apellido":"Roll",
-        "email":"broll7@huffingtonpost.com",
-        "contraseña":"4CZ4TwTlqg",
-        "categoria":"user",
-        "imagen":"user_8.jpg"
-    },
-    
-    {
-        "id":9,
-        "nombre":"Brenna",
-        "apellido":"Rubra",
-        "email":"brubra8@webeden.co.uk",
-        "contraseña":"Yx0F8rkVpQA",
-        "categoria":"user",
-        "imagen":"user_9.jpg"
-    },
-    
-    {
-        "id":10,
-        "nombre":"Anissa",
-        "apellido":"Mathet",
-        "email":"amathet9@lulu.com",
-        "contraseña":"vCuWTNrUY3yt",
-        "categoria":"user",
-        "imagen":"user_10.jpg"
-    }
-    ]
+ {
+  "id": 1,
+  "nombre": "Lainey",
+  "apellido": "Daouze",
+  "email": "ldaouze0@themeforest.net",
+  "contraseña": "JM3hfTgI",
+  "categoria": "user",
+  "imagen": "user_1.jpg"
+ },
+ {
+  "id": 2,
+  "nombre": "Emlyn",
+  "apellido": "Wapplington",
+  "email": "ewapplington1@elpais.com",
+  "contraseña": "OQq6yf",
+  "categoria": "user",
+  "imagen": "user_2.jpg"
+ },
+ {
+  "id": 3,
+  "nombre": "Fawn",
+  "apellido": "Westover",
+  "email": "fwestover2@alexa.com",
+  "contraseña": "76n0tc",
+  "categoria": "user",
+  "imagen": "user_3.jpg"
+ },
+ {
+  "id": 4,
+  "nombre": "Florenza",
+  "apellido": "Jaffray",
+  "email": "fjaffray3@washington.edu",
+  "contraseña": "4qhtBmRY",
+  "categoria": "user",
+  "imagen": "user_4.jpg"
+ },
+ {
+  "id": 5,
+  "nombre": "Inez",
+  "apellido": "Croisdall",
+  "email": "icroisdall4@blogger.com",
+  "contraseña": "kqMMu48iv",
+  "categoria": "user",
+  "imagen": "user_5.jpg"
+ },
+ {
+  "id": 6,
+  "nombre": "Vikki",
+  "apellido": "Sacase",
+  "email": "vsacase5@ebay.co.uk",
+  "contraseña": "Oqnlx4yS09",
+  "categoria": "user",
+  "imagen": "user_6.jpg"
+ },
+ {
+  "id": 7,
+  "nombre": "Nessi",
+  "apellido": "Wyllcock",
+  "email": "nwyllcock6@smh.com.au",
+  "contraseña": "ehcBml5",
+  "categoria": "user",
+  "imagen": "user_7.jpg"
+ },
+ {
+  "id": 8,
+  "nombre": "Bentley",
+  "apellido": "Roll",
+  "email": "broll7@huffingtonpost.com",
+  "contraseña": "4CZ4TwTlqg",
+  "categoria": "user",
+  "imagen": "user_8.jpg"
+ },
+ {
+  "id": 9,
+  "nombre": "Brenna",
+  "apellido": "Rubra",
+  "email": "brubra8@webeden.co.uk",
+  "contraseña": "Yx0F8rkVpQA",
+  "categoria": "user",
+  "imagen": "user_9.jpg"
+ },
+ {
+  "id": 10,
+  "nombre": "Anissa",
+  "apellido": "Mathet",
+  "email": "amathet9@lulu.com",
+  "contraseña": "vCuWTNrUY3yt",
+  "categoria": "user",
+  "imagen": "user_10.jpg"
+ },
+ {
+  "email": "andres.ottonello@gmail.com",
+  "telefono": "2215240373",
+  "perfil_usr": "on",
+  "interes": "jugeteria",
+  "password": "$2a$10$FLrkVHE1Ui5VY5YkZYoX/eFSmdeg2LfM8.8xl/.m.J7rOZE4RQ0GS",
+  "avatar": "1620775867456_img.jpg",
+  "id": 11
+ }
+]

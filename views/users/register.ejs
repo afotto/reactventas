@@ -9,23 +9,27 @@
     <%- include ('../partials/header') %>
 
     <section class="form">
-        <form method="POST" action="/" class="register">
+        <form method="POST" action="register" enctype="multipart/form-data" class="register">
             <div class="control-formulario">
-                <input type="text" placeholder="Nombre y Apellido" name="apeynom" class="control" required minlength="3">
-            </div>            
-            <div class="control-formulario">
-                <input type="text" placeholder="Nombre de usuario" name="user" class="control" required minlength="3">
-            </div>            
-            <div class="control-formulario">
-                <input type="email" placeholder="E-mail" name="email" class="control" required>
+                <input 
+                    type="email" 
+                    placeholder="E-mail" 
+                    name="email" 
+                    class="control"
+                    class="control <%= locals.errors && errors.email ? 'is-invalid' : null %>" 
+                    required>
             </div>            
             <div class="control-formulario">
                 <input type="text" placeholder="Teléfono" name="telefono" class="control" required>
             </div>            
             <div class="control-formulario">
-                <label class="label">Fecha de nacimiento</label>
-                <input type="date" placeholder="mm/dd/yyyy" name="f_nacimiento" class="control" required>
-            </div>            
+                <label class="label">Imagen de perfil:</label>
+                <input 
+                    type="file" 
+                    name="avatar"
+                    class="control-formulario <%= locals.errors && errors.avatar ? 'is-invalid' : null %>"
+                >
+            </div>
             <div class="perfil_cont">
                 <label class="label">Perfil de usuario</label>
                 <label>
@@ -48,12 +52,12 @@
             <div class="control-formulario">
                 <input type="password" placeholder="Ingrese la password" name="password" class="control" required minlength="3">
             </div>            
-            <div class="control-formulario">
-                <input type="password" placeholder="Repita la password" name="password" class="control" required minlength="3">
-            </div>            
+            <!-- <div class="control-formulario">
+                <input type="password" placeholder="Repita la password" name="password2" class="control" required minlength="3">
+            </div>             -->
             <div class="buttons">
-                <button type="submit" class="boton-formulario">Enviar</button>
-                <button type="reset" class="boton-formulario">Reset</button>
+                <button type="submit" class="boton-formulario">Registrarme</button>
+                <button type="reset" class="boton-formulario">Resetear</button>
             </div>
         
         </form>        

@@ -58,7 +58,11 @@ const model = function (name) {
             return rows.find (row => row.id == id);
             
         },
-
+        findByField: function(field, text){
+            let allUsers = this.all();
+            let usersFound = allUsers.find(oneUser => oneUser[field] == text);
+            return usersFound;
+        },
         edit: function (row) {
             console.log('entre en productModel.edit');
             console.log(row);
