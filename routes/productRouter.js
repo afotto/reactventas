@@ -15,6 +15,8 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
+const validations = require ('../middlewares/productValidate');
+
 router.get('/detail/', controladorproduct.detalle);
 router.get('/cart/', controladorproduct.carrito);
 
@@ -22,7 +24,7 @@ router.get('/',controladorproduct.list);
 
 //Ottonello - Alta de producto sprint4
 router.get('/create', controladorproduct.create);
-router.post('/', upload.single('image'), controladorproduct.store);
+router.post('/', upload.single('image'),validations, controladorproduct.store);
 
 router.get('/:id', controladorproduct.detalleCrud);
 
@@ -32,7 +34,7 @@ router.delete('/:id' , controladorproduct.delete );
 
 
 router.get('/:id/edit', controladorproduct.edit);
-router.put('/:id/edit', upload.single('image'), controladorproduct.update);
+router.put('/:id/edit', upload.single('image'),validations, controladorproduct.update);
 
 
 

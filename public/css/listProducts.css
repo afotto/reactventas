@@ -29,7 +29,10 @@ form {
     form{
         margin: 0;
     }
-
+    .button a{
+        text-decoration: none;
+        color: #ffffff;
+    }
 .listadoDeProductos a, form a, button {
     background-color: rgb(11, 130, 204);
     border: solid 1px rgb(11, 130, 204);
