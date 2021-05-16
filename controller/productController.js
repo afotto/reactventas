@@ -1,3 +1,6 @@
+//Llamo al express-validator
+const{validationResult} = require ('express-validator');
+
 //Llamo al modelo
 const jsonDB = require ('../model/jsonDatabase');
 //Traigo los métodos para producto
@@ -29,11 +32,9 @@ let productController = {
     },
 
     edit: (req, res) => {
-        console.log('productController.edit');
-        console.log(req.params.id);
+        //console.log('productController.edit');
+        //console.log(req.params.id);
         let casa = productModel.find(req.params.id)
-        console.log(casa)
-
 
         if (casa) {
             res.render('products/editProduct', {casa});
@@ -49,10 +50,19 @@ let productController = {
     },
 
     create: (req, res) => {
-        res.render ('products/newProduct')
+        res.render ('products/createProduct')
     },
 
     store: (req, res) => {
+        const resultValidation = validationResult(req);
+        if (resultValidation.errors.length > 0) {
+			return res.render('products/createProduct', {
+				errors: resultValidation.mapped(),
+				casa: req.body
+                
+			});
+            
+		}
         // Atrapo los contenido del formulario
         const product = req.body;
         // Verificar si viene un archivo, para nombrarlo  
@@ -65,18 +75,16 @@ let productController = {
     
    
     update: (req, res) =>{
-        //console.log('Entro en update');
+        const resultValidation = validationResult(req);
         let casa = req.body;
-        //console.log(casa);
-        //console.log('estoy buscando id');
-       // console.log(req.params.id);
         casa.id = req.params.id;
-
-        /*casa.image = req.file ? req.file.filename : '';
-        productModel.edit(casa);
-        res.redirect ('/products');*/
-
-
+        if(resultValidation.errors.length > 0 ){
+            return res.render ('products/editProduct', {
+                errors: resultValidation.mapped(),
+                casa
+            });
+        }
+        
         if (req.file===undefined) {
         casa.image = req.body.oldImage
         } else {
