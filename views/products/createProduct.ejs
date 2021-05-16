@@ -10,12 +10,15 @@
 
             <main class="main">
                 <h3>Edición de productos</h3>
-                <form action="/products/<%= casa.id %>/edit?_method=PUT" method="POST" class="form"
-                    enctype="multipart/form-data">
+                <form action="/products" method="POST" class="form" enctype="multipart/form-data">
                     <div class="campo">
                         <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" value="<%= casa.nombre %>" class=<%=locals.errors &&
-                            errors.nombre ? 'is-invalid' : null %>>
+                        <input
+                            type="text" 
+                            name="nombre" 
+                            value="<%= locals.casa ? casa.nombre : null %>"
+                            class=<%=locals.errors && errors.nombre ? 'is-invalid' : null
+                            %>>
                         <% if (locals.errors && errors.nombre) { %>
                             <div class="text-danger">
                                 <%= errors.nombre.msg %>
@@ -24,8 +27,12 @@
                     </div>
                     <div class="campo">
                         <label for="descrip">Descripción</label>
-                        <input type="text" name="descrip" value="<%= casa.descrip %>" class=<%=locals.errors &&
-                            errors.descrip ? 'is-invalid' : null %>>
+                        <input 
+                            type="text" 
+                            name="descrip" 
+                            value="<%= locals.casa ? casa.descrip : null %>"
+                            class=<%=locals.errors && errors.descrip ? 'is-invalid' :
+                            null %>></input>
                         <% if (locals.errors && errors.descrip) { %>
                             <div class="text-danger">
                                 <%= errors.descrip.msg %>
@@ -35,7 +42,7 @@
                     <div class="campo">
                         <label for="image">Imagen</label>
                         <input type="file" name="image">
-                        <input type="hidden" name="oldImage" value="<%= locals.errors ? casa.oldImage : casa.image %>">
+                        <input type="hidden" name="oldImage" value="<%= locals.casa ? casa.image : '0' %>">
                         <% if (locals.errors && errors.image) { %>
                             <div class="text-danger">
                                 <%= errors.image.msg %>
@@ -46,21 +53,26 @@
                     <div class="campo">
                         <label for="categ">Categoría</label>
                         <select name="categ" class=<%=locals.errors && errors.categ ? 'is-invalid' : null %>>
-                            <option value=1 name="categ" <%= casa.categ == 1 ? 'selected' : null %>>1 Estrella </option>
-                            <option value=2 name="categ" <%= casa.categ == 2 ? 'selected' : null %>>2 Estrella </option>
-                            <option value=3 name="categ" <%= casa.categ == 3 ? 'selected' : null %>>3 Estrella </option>
-                            <option value=4 name="categ" <%= casa.categ == 4 ? 'selected' : null %>>4 Estrella </option>
-                            <option value=5 name="categ" <%= casa.categ == 5 ? 'selected' : null %>>5 Estrella </option>
-                            <% if (locals.errors && errors.categ) { %>
-                                <div class="text-danger">
-                                    <%= errors.categ.msg %>
-                                </div>
-                                <% } %>
+                            <option value="" name="categ" >Seleccionar </option>
+                            <option value=1 name="categ" <%= locals.casa && casa.categ == 1 ? 'selected' : null %>>1 Estrella </option>
+                            <option value=2 name="categ" <%= locals.casa && casa.categ == 2 ? 'selected' : null %>>2 Estrella </option>
+                            <option value=3 name="categ" <%= locals.casa && casa.categ == 3 ? 'selected' : null %>>3 Estrella </option>
+                            <option value=4 name="categ" <%= locals.casa && casa.categ == 4 ? 'selected' : null %>>4 Estrella </option>
+                            <option value=5 name="categ" <%= locals.casa && casa.categ == 5 ? 'selected' : null %>>5 Estrella </option>
                         </select>
+                        <% if (locals.errors && errors.categ) { %>
+                            <div class="text-danger">
+                                <%= errors.categ.msg %>
+                            </div>
+                            <% } %>
                     </div>
                     <div class="campo">
                         <label for="habit">Cantidad de Habitaciones</label>
-                        <input type="number" name="habit" value="<%= casa.habit %>" class="habit <%= locals.errors &&
+                        <input 
+                            type="number" 
+                            name="habit" 
+                            value="<%= locals.casa ? casa.habit : null %>"
+                            class="habit <%= locals.errors &&
                             errors.habit ? 'is-invalid' : null %>">
                         <% if (locals.errors && errors.habit) { %>
                             <div class="text-danger">
@@ -70,7 +82,11 @@
                     </div>
                     <div class="campo">
                         <label for="price">Precio</label>
-                        <input type="text" name="price" value="<%= casa.price %>" class="precio <%=locals.errors &&
+                        <input 
+                            type="text" 
+                            name="price" 
+                            value="<%= locals.casa ? casa.price : null %>"
+                            class="precio <%=locals.errors &&
                             errors.price ? 'is-invalid' : null %>">
                         <% if (locals.errors && errors.price) { %>
                             <div class="text-danger">
@@ -80,8 +96,12 @@
                     </div>
                     <div class="campo">
                         <label for="location">Ubicacion</label>
-                        <input type="text" name="ubicacion" value="<%= casa.ubicacion %>" class=<%=locals.errors &&
-                            errors.ubicacion ? 'is-invalid' : null %>>
+                        <input 
+                            type="text" 
+                            name="ubicacion" 
+                            value="<%= locals.casa ? casa.ubicacion : null %>"
+                            class=<%=locals.errors && errors.ubicacion ? 'is-invalid' :
+                            null %>>
                         <% if (locals.errors && errors.ubicacion) { %>
                             <div class="text-danger">
                                 <%= errors.ubicacion.msg %>
@@ -90,8 +110,12 @@
                     </div>
                     <div class="campo">
                         <label for="ciudad">Ciudad</label>
-                        <input type="text" name="ciudad" value="<%= casa.ciudad %>" class=<%=locals.errors &&
-                            errors.ciudad ? 'is-invalid' : null %>>
+                        <input 
+                            type="text" 
+                            name="ciudad" 
+                            value="<%= locals.casa ? casa.ciudad : null %>"
+                            class=<%=locals.errors && errors.ciudad ? 'is-invalid' : null
+                            %>>
                         <% if (locals.errors && errors.ciudad) { %>
                             <div class="text-danger">
                                 <%= errors.ciudad.msg %>
@@ -100,8 +124,11 @@
                     </div>
                     <div class="campo">
                         <label for="condiciones">Condiciones</label>
-                        <input type="text" name="condiciones" value="<%= casa.condiciones %>" class=<%=locals.errors &&
-                            errors.condiciones ? 'is-invalid' : null %>>
+                        <input
+                            name="condiciones" 
+                            value="<%= locals.casa ? casa.condiciones : null %>"
+                            class=<%=locals.errors && errors.condiciones
+                            ? 'is-invalid' : null %>></input>
                         <% if (locals.errors && errors.condiciones) { %>
                             <div class="text-danger">
                                 <%= errors.condiciones.msg %>
@@ -114,35 +141,35 @@
                             type="checkbox" 
                             name="servicios" 
                             value="wifi"
-                            <%= casa.servicios && casa.servicios.includes("wifi") ? 'checked' : null %>>
+                            <%= locals.casa && casa.servicios && casa.servicios.includes("wifi") ? 'checked' : null %>>
                         <label for="servicios">Wi-fi</label>
                         <br>
                         <input 
                             type="checkbox" 
                             name="servicios" 
                             value="pileta"
-                            <%= casa.servicios && casa.servicios.includes("pileta") ? 'checked' : null %>>
+                            <%= locals.casa && casa.servicios && casa.servicios.includes("pileta") ? 'checked' : null %>>
                         <label for="servicios">Pileta</label>
                         <br>
                         <input 
                             type="checkbox" 
                             name="servicios" 
                             value="estacionamiento"
-                            <%= casa.servicios && casa.servicios.includes("estacionamiento") ? 'checked' : null %>>
+                            <%= locals.casa && casa.servicios && casa.servicios.includes("estacionamiento") ? 'checked' : null %>>
                         <label for="servicios">Estacionamiento</label>
                         <br>
                         <input 
                             type="checkbox" 
                             name="servicios" 
                             value="parrilla"
-                            <%= casa.servicios && casa.servicios.includes("parrilla") ? 'checked' : null %>>
+                            <%= locals.casa && casa.servicios && casa.servicios.includes("parrilla") ? 'checked' : null %>>
                         <label for="servicios">Parrilla</label>
                         <br>
                         <input 
                             type="checkbox" 
                             name="servicios" 
                             value="aireacondicionado"
-                            <%= casa.servicios && casa.servicios.includes("aireacondicionado") ? 'checked' : null %>>
+                            <%= locals.casa && casa.servicios && casa.servicios.includes("aireacondicionado") ? 'checked' : null %>>
                         <label for="servicios">Aire acondicionado</label>
                         <% if (locals.errors && errors.servicios) { %>
                             <div class="text-danger">
@@ -151,12 +178,10 @@
                             <% } %>
                                 <br>
 
-                                <!--
-                        <input type="text" name="servicios" value="<%= casa.servicios %>">  
-                    -->
+
                     </div>
 
-                    <button type="submit" class="button">Actualizar</button>
+                    <button type="submit" class="button">Crear</button>
                 </form>
 
 

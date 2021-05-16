@@ -34,9 +34,10 @@ h3{
                 color: #3295ce;
             }
 
-            .campo input{
+            .campo input, select, textarea{
                 margin-left: 30px;
                 font-size: 20px;
+                border-radius: 10px;
             }
             .habit{
                 width: 50px;
@@ -53,3 +54,9 @@ h3{
                 color: #ffffff;
             }
 
+            .text-danger{
+                color: red;
+            }
+            .is-invalid{
+                border: red solid 1px;
+            }
