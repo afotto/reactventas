@@ -16,11 +16,10 @@
                     placeholder="E-mail" 
                     name="email" 
                     class="control"
-                    class="control <%= locals.errors && errors.email ? 'is-invalid' : null %>" 
-                    required>
+                    class="control <%= locals.errors && errors.email ? 'is-invalid' : null %>">
             </div>            
             <div class="control-formulario">
-                <input type="text" placeholder="Teléfono" name="telefono" class="control" required>
+                <input type="text" placeholder="Teléfono" name="telefono" class="control">
             </div>            
             <div class="control-formulario">
                 <label class="label">Imagen de perfil:</label>
@@ -50,7 +49,7 @@
                 <label class="check"><input type="checkbox"  name="interes" value="vida-sana">Aparts</label>
             </div>
             <div class="control-formulario">
-                <input type="password" placeholder="Ingrese la password" name="password" class="control" required minlength="3">
+                <input type="password" placeholder="Ingrese la password" name="password" class="control">
             </div>            
             <!-- <div class="control-formulario">
                 <input type="password" placeholder="Repita la password" name="password2" class="control" required minlength="3">
