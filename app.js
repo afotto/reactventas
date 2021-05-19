@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const methodOverride = require('method-override');
+const session = require("express-session")
 
 
 const path = require('path');
@@ -13,8 +14,14 @@ const userRouter = require ('./routes/userRouter');
 
 app.use(express.static('public'));
 
+app.use(session({
+	secret: "Secreto",
+	resave: false,
+	saveUninitialized: false,
+}));
+
 //Configuramos ejs
-app.set('view engine', 'ejs')
+app.set('view engine', 'ejs')  
 
 //midleware de PUT y DELETE
 app.use(methodOverride('_method'));

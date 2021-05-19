@@ -9,48 +9,90 @@
     <%- include ('../partials/header') %>
 
     <section class="form">
-        <form method="POST" action="register" enctype="multipart/form-data" class="register">
+        <form method="POST" action="/register" enctype="multipart/form-data" class="register">
             <div class="control-formulario">
                 <input 
-                    type="email" 
+                    type="text" 
                     placeholder="E-mail" 
                     name="email" 
-                    class="control"
-                    class="control <%= locals.errors && errors.email ? 'is-invalid' : null %>" 
-                    required>
-            </div>            
+                    class="control <%= locals.errors && errors.email ? 'is-invalid' : null %>"
+                    value = "<%= locals.oldData ? oldData.email : null %>">
+                    <% if(locals.errors && errors.email) { %>
+                        <div class="text-danger">
+                            <%= errors.email.msg %>
+                        </div>
+                        <% } %>  
+            </div>         
+             
             <div class="control-formulario">
-                <input type="text" placeholder="Teléfono" name="telefono" class="control" required>
-            </div>            
+                <input 
+                    type="text" 
+                    placeholder="Teléfono" 
+                    name="telefono" 
+                    class="control <%= locals.errors && errors.telefono ? 'is-invalid' : null %>"
+                    value = "<%= locals.oldData ? oldData.telefono : null %>">
+                <% if(locals.errors && errors.telefono) { %>
+                    <div class="text-danger">
+                        <%= errors.telefono.msg %>
+                    </div>
+                    <% } %>   
+            </div>     
+                  
             <div class="control-formulario">
                 <label class="label">Imagen de perfil:</label>
                 <input 
                     type="file" 
                     name="avatar"
                     class="control-formulario <%= locals.errors && errors.avatar ? 'is-invalid' : null %>"
-                >
+                    >
+                    <% if (locals.errors && errors.avatar) { %>
+                        <div class="text-danger">
+                            <%= errors.avatar.msg %>
+                        </div>
+                        <% } %>
             </div>
             <div class="perfil_cont">
                 <label class="label">Perfil de usuario</label>
                 <label>
                 <input type="radio" 
-                    name="perfil_usr" class="perfil">Para publicar
+                    name="perfil_usr" 
+                    class="perfil"
+                    value = "publicar"
+                    <%= locals.oldData && oldData.perfil_usr == 'publicar' ? 'checked' : null %>>Para publicar
                 </label>
                 <label>
                 <input type="radio" 
-                    name="perfil_usr" class="perfil">Para alquilar
+                    name="perfil_usr" 
+                    class="perfil"
+                    value = "alquilar"
+                    <%= locals.oldData && oldData.perfil_usr == 'alquilar' ? 'checked' : null %>>Para alquilar
                 </label>
+                <% if(locals.errors && errors.perfil_usr) { %>
+                    <div class="text-danger">
+                        <%= errors.perfil_usr.msg %>
+                    </div>
+                    <% } %>   
             </div>            
             <div class="intereses">
                 <label  class="label">Intereses</label>
-                <label class="check"><input type="checkbox"  name="interes" value="electro">Casas</label>
-                <label class="check"><input type="checkbox"  name="interes" value="moda">Departamentos</label>
-                <label class="check"><input type="checkbox"  name="interes" value="hogar">Hoteles</label>
-                <label class="check"><input type="checkbox"  name="interes" value="jugeteria">Hosterías</label>
-                <label class="check"><input type="checkbox"  name="interes" value="vida-sana">Aparts</label>
+                <label class="check"><input type="checkbox"  name="interes" value="casa" <%= locals.oldData && oldData.interes && oldData.interes.includes("casa") ? 'checked' : null %>>Casas</label>
+                <label class="check"><input type="checkbox"  name="interes" value="departamento" <%= locals.oldData && oldData.interes && oldData.interes.includes('departamento') ? 'checked' : null %>>Departamentos</label>
+                <label class="check"><input type="checkbox"  name="interes" value="hotel" <%= locals.oldData && oldData.interes && oldData.interes.includes('hotel') ? 'checked' : null %>>Hoteles</label>
+                <label class="check"><input type="checkbox"  name="interes" value="hosteria" <%= locals.oldData && oldData.interes && oldData.interes.includes('hosteria') ? 'checked' : null %>>Hosterías</label>
+                <label class="check"><input type="checkbox"  name="interes" value="Aparts" <%= locals.oldData && oldData.interes && oldData.interes.includes('Aparts') ? 'checked' : null %>>Aparts</label>
             </div>
             <div class="control-formulario">
-                <input type="password" placeholder="Ingrese la password" name="password" class="control" required minlength="3">
+                <input 
+                    type="password" 
+                    placeholder="Ingrese la password" 
+                    name="password" 
+                    class="control <%= locals.errors && errors.password ? 'is-invalid' : null %>">
+                <div class="text-danger">
+                    <% if(locals.errors && errors.password) { %>
+                        <div class="text-danger">
+                            <%= errors.password.msg %>
+                        </div>
+                        <% } %>   
             </div>            
             <!-- <div class="control-formulario">
                 <input type="password" placeholder="Repita la password" name="password2" class="control" required minlength="3">

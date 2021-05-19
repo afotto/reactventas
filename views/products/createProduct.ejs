@@ -9,7 +9,7 @@
         <%- include ('../partials/header') %>
 
             <main class="main">
-                <h3>Edición de productos</h3>
+                <h3>Creación de productos</h3>
                 <form action="/products" method="POST" class="form" enctype="multipart/form-data">
                     <div class="campo">
                         <label for="nombre">Nombre</label>
@@ -181,9 +181,15 @@
 
                     </div>
 
-                    <button type="submit" class="button">Crear</button>
+                    <button type="reset" class="button">Cancelar</button>
+                    <button type="submit" class="button">Confirmar</button>
+                    <button  class="button">
+                        <a href="/products">Volver</a>
+                    </button>
+                    
+    
                 </form>
-
+               
 
             </main>
             <%- include ('../partials/footer') %>
