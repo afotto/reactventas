@@ -121,7 +121,7 @@
     font-size: 15px;
     border: none;
     height: 30%;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     box-sizing: border-box;
 }
 .perfil{
@@ -160,7 +160,14 @@
         margin: 2px;
     }
 
-
+    .text-danger{
+        color: red;
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    .is-invalid{
+        border: red solid 1px;
+    }
 
 /*================== Footer =======================*/
 .redes {

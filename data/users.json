@@ -97,5 +97,49 @@
   "password": "$2a$10$FLrkVHE1Ui5VY5YkZYoX/eFSmdeg2LfM8.8xl/.m.J7rOZE4RQ0GS",
   "avatar": "1620775867456_img.jpg",
   "id": 11
+ },
+ {
+  "email": "",
+  "telefono": "",
+  "password": "$2a$10$dsBcMYqsCpr1bFtZTM7X.OsGbUlYhDY1pqy0tQwcULzoufqk/g7hG",
+  "avatar": "1621389808835_img.jpg",
+  "id": 12
+ },
+ {
+  "email": "guille_pujals@yahoo.com.ar",
+  "telefono": "01138189096",
+  "perfil_usr": "publicar",
+  "interes": [
+   "casa",
+   "departamento"
+  ],
+  "password": "$2a$10$wv.I3mHqJuSzgfNQaGqssemXqcuhyEQ/TaXQ4xmAK82eWUvBMlpCm",
+  "avatar": "avatar.jpg",
+  "id": 13
+ },
+ {
+  "email": "guillepujals1501@gmail.com",
+  "telefono": "01138189096",
+  "perfil_usr": "publicar",
+  "interes": [
+   "casa",
+   "hotel"
+  ],
+  "password": "$2a$10$FnB.q32KiZrU9vqhVFyB7utZ2/LOd9l2bxxv0M5M8XKKz94zlA50K",
+  "avatar": "1621453099683_img.jpg",
+  "id": 14
+ },
+ {
+  "email": "prueba@gmail.com",
+  "telefono": "1136259874",
+  "perfil_usr": "publicar",
+  "interes": [
+   "casa",
+   "hotel",
+   "hosteria"
+  ],
+  "password": "$2a$10$gruuDV/OWL3dZbTij9uZSOGF9m/nxnuxRpJSSRP5BMqjRRhwKybfq",
+  "avatar": "avatar.jpg",
+  "id": 15
  }
 ]

@@ -2,6 +2,7 @@ const bcryptjs = require('bcryptjs');
 const jsonDB = require ('../model/jsonDatabase');
 const userModel = jsonDB ('users');
 
+
 const {
 	validationResult
 } = require('express-validator');
@@ -47,6 +48,15 @@ let userController = {
         res.render('users/register')
     },
     processRegister(req, res){
+        const resulValidation = validationResult (req);
+        console.log(req.body);
+        if (resulValidation.errors.length > 0 ){
+            return res.render ('users/register',{
+            errors: resulValidation.mapped(),
+            oldData: req.body,
+            
+        });
+        }
         let userInDB = userModel.findByField('email', req.body.email);
 
         if (userInDB) {
@@ -64,7 +74,7 @@ let userController = {
 		let userToCreate = {
 			...req.body,
 			password: bcryptjs.hashSync(req.body.password, 10),
-			avatar: req.file.filename
+            avatar: req.file ? req.file.filename :'avatar.jpg'
 		}
 
 		let userCreated = userModel.create(userToCreate);
