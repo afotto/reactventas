@@ -17,30 +17,24 @@ const upload = multer({ storage });
 
 const validations = require ('../middlewares/productValidate');
 
-router.get('/detail/', controladorproduct.detalle);
-router.get('/cart/', controladorproduct.carrito);
-
+//Ottonello - 19-5 - Revisar rutas sprint4
+//1. /products (GET) Listado de productos
 router.get('/',controladorproduct.list);
-
-//Ottonello - Alta de producto sprint4
+//2. 2. /products/create (GET) Formulario de creación de productos
 router.get('/create', controladorproduct.create);
-router.post('/', upload.single('image'),validations, controladorproduct.store);
-
+//3. /products/:id (GET) Detalle de un producto particular
 router.get('/:id', controladorproduct.detalleCrud);
-
+//4. /products (POST) Acción de creación (a donde se envía el formulario)
+router.post('/', upload.single('image'),validations, controladorproduct.store);
+//5. /products/:id/edit (GET) Formulario de edición de productos
+router.get('/:id/edit', controladorproduct.edit);
+//6. /products/:id (PUT) Acción de edición (a donde se envía el formulario)
+router.put('/:id/edit', upload.single('image'),validations, controladorproduct.update);
+//7. /products/:id (DELETE) Acción de borrado
 router.delete('/:id' , controladorproduct.delete );
 
-
-
-
-router.get('/:id/edit', controladorproduct.edit);
-router.put('/:id/edit', upload.single('image'),validations, controladorproduct.update);
-
-
-
-
-
-
+router.get('/detail/', controladorproduct.detalle);
+router.get('/cart/', controladorproduct.carrito);
 
 
 module.exports = router;

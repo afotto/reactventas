@@ -79,7 +79,7 @@ let userController = {
 
 		let userCreated = userModel.create(userToCreate);
 
-		return res.redirect('/user/login');        
+		return res.redirect('/login');        
     }
 }
 

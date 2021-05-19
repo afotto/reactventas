@@ -88,5 +88,45 @@
   "contraseña": "vCuWTNrUY3yt",
   "categoria": "user",
   "imagen": "user_10.jpg"
+ },
+ {
+  "email": "andres.1@gmail.com",
+  "telefono": "2215240373",
+  "perfil_usr": "publicar",
+  "password": "$2a$10$hIEoCjMnE0AVsrYR8MkicujcWYzX1tC803ZBlztOMPCeG001j1U2K",
+  "avatar": "1621454370066_img.jpg",
+  "id": 11
+ },
+ {
+  "email": "andres.o1@gmail.com",
+  "telefono": "2215240373",
+  "perfil_usr": "publicar",
+  "password": "$2a$10$kCRxrt5D6CGoPeukUcmd0eqsZ5kNxf.VHOBLg7HASqNAV14sTlQaq",
+  "avatar": "1621454662164_img.jpg",
+  "id": 12
+ },
+ {
+  "email": "a.otto@gmail.com",
+  "telefono": "2215240373",
+  "perfil_usr": "alquilar",
+  "interes": "hosteria",
+  "password": "$2a$10$RlvXDDlJgVnNMZhRKR2eo.H5VNqzGSIegcbeERk4GReP8KhbRy5re",
+  "avatar": "1621462212448_img.jpg",
+  "id": 13
+ },
+ {
+  "email": "and.otton@gmail.com",
+  "telefono": "2215240373",
+  "perfil_usr": "alquilar",
+  "interes": [
+   "casa",
+   "departamento",
+   "hotel",
+   "hosteria",
+   "Aparts"
+  ],
+  "password": "$2a$10$OnidSjDlGTQum49Po8ZbI.Afx/vpZ.kDy/CsRt.1ALHfMvKipd66K",
+  "avatar": "1621462270698_img.jpg",
+  "id": 14
  }
 ]
