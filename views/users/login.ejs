@@ -8,10 +8,15 @@
     <%- include ('../partials/header') %>
 
     <section class="form">
-        <form method="POST" action="/" class="register">
+        <form method="POST" action="/login" class="register">
                 <div class="control-formulario">
                     <input type="email" placeholder="E-mail" name="email" class="control" required>
-                </div>            
+                </div> 
+                <% if (locals.errors && errors.email) { %>
+                    <div class="123">
+                        <%= errors.email.msg %>
+                    </div>
+              <% }  %>       
                 <div class="control-formulario">
                     <input type="password" placeholder="password" name="contraseña" class="control" required minlength="3">
                 </div>            
@@ -22,10 +27,6 @@
                         
                 <div class="buttons">
                     <button type="submit" class="boton-formulario">Acceder</button>
-                    <button type="submit" class="boton-formulario">Ingresa con facebook</button>
-                    <button type="submit" class="boton-formulario">Ingresa con google</button>
-                    <button type="submit" class="boton-formulario">Registrarse</button>
-                    <a href=" ">¿olvido su contraseña?</a>
                 </div>
         
             </form>        

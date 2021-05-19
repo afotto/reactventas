@@ -1,65 +1,5 @@
 [
  {
-  "nombre": "Timber Falls",
-  "descrip": "donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum",
-  "categ": "1",
-  "habit": "1",
-  "price": "19258.36",
-  "ubicacion": "7 Farragut Park",
-  "ciudad": "Sherbrooke",
-  "condiciones": "proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla",
-  "servicios": [
-   "pileta",
-   "estacionamiento"
-  ],
-  "id": "2",
-  "image": "img-1621135728503.JPG"
- },
- {
-  "id": 3,
-  "nombre": "Dogma",
-  "descrip": "consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus",
-  "image": "img3.jpg",
-  "categ": 2,
-  "cantHabitaciones": 7,
-  "price": 22557,
-  "ubicacion": "8 Springview Hill",
-  "ciudad": "Reszel",
-  "condiciones": "turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id",
-  "servicios": [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
-  ]
- },
- {
-  "id": 4,
-  "nombre": "Saturn 3",
-  "descrip": "nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia",
-  "image": "img4.jpg",
-  "categ": 2,
-  "cantHabitaciones": 3,
-  "price": 4000,
-  "ubicacion": "6 Lawn Court",
-  "ciudad": "Paraparaumu",
-  "condiciones": "curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod",
-  "servicios": [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
-  ]
- },
- {
   "id": 5,
   "nombre": "Simon of the Desert (Simón del desierto)",
   "descrip": "ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam",
@@ -430,71 +370,99 @@
   "id": 24
  },
  {
-  "nombre": "prueba5489",
-  "descrip": "sin cambiar imagen",
-  "categ": "1",
-  "habit": "4",
-  "price": "562.56",
-  "ubicacion": "Mar del Plata",
-  "ciudad": "Mar del Plata",
-  "condiciones": "jgdggtxs",
-  "servicios": [
-   "pileta",
-   "estacionamiento",
-   "parrilla"
-  ],
-  "id": "25",
-  "image": "img-1621132387510.JPG"
- },
- {
   "nombre": "guillermina",
   "descrip": "PARA PROBAR",
-  "oldImage": "",
-  "categ": "2",
-  "habit": "2",
-  "price": "2546.52",
-  "ubicacion": "Mar del Plata",
-  "ciudad": "Mar del Plata",
-  "condiciones": "cjoaspskc,",
-  "servicios": [
-   "wifi",
-   "estacionamiento"
-  ],
-  "image": "img-1621133283832.JPG",
+  "categoria": "",
+  "cantHabitaciones": "",
+  "price": "",
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "image": "img-1620734090074.JPG",
+  "id": 22
+ },
+ {
+  "nombre": "",
+  "descrip": "",
+  "categoria": "",
+  "cantHabitaciones": "",
+  "price": "",
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "image": "",
+  "id": 23
+ },
+ {
+  "nombre": "",
+  "descrip": "",
+  "categoria": "",
+  "cantHabitaciones": "",
+  "price": "",
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "image": "",
+  "id": 24
+ },
+ {
+  "nombre": "",
+  "descrip": "",
+  "categoria": "",
+  "cantHabitaciones": "",
+  "price": "",
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "image": "",
   "id": 26
  },
  {
-  "nombre": "guillermina",
-  "descrip": "PARA PROBAR",
-  "oldImage": "0",
-  "categ": "2",
-  "habit": "4",
-  "price": "569.25",
-  "ubicacion": "Mar del Plata",
-  "ciudad": "Haedo",
-  "condiciones": "cjoaspskc,",
-  "servicios": [
-   "pileta",
-   "estacionamiento"
-  ],
-  "image": "img-1621136116874.JPG",
+  "nombre": "",
+  "descrip": "",
+  "categoria": "",
+  "cantHabitaciones": "",
+  "price": "",
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "image": "",
   "id": 27
  },
  {
-  "nombre": "PRUEBA CREAR",
-  "descrip": "PARA PROBAR",
-  "categ": "4",
-  "habit": "2",
-  "price": "6321.27",
-  "ubicacion": "Mar del Plata",
-  "ciudad": "Mar del Plata",
-  "condiciones": "prueba 10",
-  "servicios": [
-   "estacionamiento",
-   "parrilla",
-   "aireacondicionado"
-  ],
-  "id": "28",
-  "image": "img-1621202142573.JPG"
+  "nombre": "",
+  "descrip": "",
+  "categoria": "",
+  "cantHabitaciones": "",
+  "price": "",
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "image": "",
+  "id": 28
+ },
+ {
+  "nombre": "",
+  "descrip": "",
+  "categoria": "",
+  "cantHabitaciones": "",
+  "price": "",
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "image": "",
+  "id": 29
+ },
+ {
+  "nombre": "",
+  "descrip": "",
+  "categoria": "",
+  "cantHabitaciones": "",
+  "price": "",
+  "ubicacion": "",
+  "ciudad": "",
+  "condiciones": "",
+  "image": "",
+  "id": 30
  }
 ]
