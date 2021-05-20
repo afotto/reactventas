@@ -18,8 +18,8 @@ let userController = {
         let userToLogin = userModel.findByField("email", req.body.email)
         if (userToLogin) {
 
-            //let isPasswordOk = bcryptjs.compareSync(req.body.contraseña, userToLogin.contraseña)
-            if (req.body.contraseña == userToLogin.contraseña) {
+            let isPasswordOk = bcryptjs.compareSync(req.body.contraseña, userToLogin.password)
+            if (isPasswordOk) {
                 
                 req.session.userLogged = userToLogin
                 //console.log(req.session);

@@ -128,5 +128,14 @@
   "password": "$2a$10$OnidSjDlGTQum49Po8ZbI.Afx/vpZ.kDy/CsRt.1ALHfMvKipd66K",
   "avatar": "1621462270698_img.jpg",
   "id": 14
+ },
+ {
+  "email": "santinocaffarone@mac.com",
+  "telefono": "1112341234",
+  "perfil_usr": "publicar",
+  "interes": "casa",
+  "password": "$2a$10$.dYveq4K58cf126IWzstDOjOXO8dFOC3PlNgXzZ3S6jmvwvFEkjlO",
+  "avatar": "avatar.jpg",
+  "id": 15
  }
 ]
