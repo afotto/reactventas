@@ -137,5 +137,14 @@
   "password": "$2a$10$.dYveq4K58cf126IWzstDOjOXO8dFOC3PlNgXzZ3S6jmvwvFEkjlO",
   "avatar": "avatar.jpg",
   "id": 15
+ },
+ {
+  "email": "prueba151@gmail.com",
+  "telefono": "1147476541",
+  "perfil_usr": "publicar",
+  "interes": "casa",
+  "password": "$2a$10$k5LKh5G8GN13gG5lc1z9Xel97Sy8NzvxDGeZur5xdLBy9SO5kvoay",
+  "avatar": "avatar.jpg",
+  "id": 16
  }
 ]
