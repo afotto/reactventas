@@ -1,0 +1,36 @@
+{
+    "casas":[
+        {
+            "id":"1",
+            "descripcion": "Casa de buenas dimensiones",
+            "ubicacion": "Pinamar",
+            "capacidad": "5",
+            "imagen":"img1.jpg",
+            "estacionamiento": "si"
+        },
+        {
+            "id":"2",
+            "descripcion": "Casa con pileta",
+            "ubicacion": "Mar Del Plata",
+            "capacidad": "7",
+            "imagen":"img2.jpg",
+            "estacionamiento": "si"
+        },
+        {
+            "id":"3",
+            "descripcion": "Casa tres cuadras de la playa",
+            "ubicacion": "Ostende",
+            "capacidad": "7",
+            "imagen":"img3.jpg",
+            "estacionamiento": "si"
+        },
+        {
+            "id":"4",
+            "descripcion": "Casa 5 habitaciones",
+            "ubicacion": "Mar de Ajo",
+            "capacidad": "8",
+            "imagen":"img4.jpg",
+            "estacionamiento": "si"
+        }
+    ]
+}
